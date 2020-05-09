@@ -1,0 +1,89 @@
+compiler directives
+#include <c8051_SDCC.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <i2c.h>
+
+declare global variables
+unsigned int PW_CENTER, PW_RIGHT, PW_LEFT, SERVO_PW, PCA_Start
+unsigned int count, heading, desired, print_count, error, k, temp
+unsigned char input
+
+__sbit __at 0xB7 SS
+
+function prototypes
+void Port_Init(void)
+void PCA_Init(void)
+void Interrupt_Init(void)
+void XBR0_Init()
+void SMB_Init(void)
+
+void Steering_Servo(void)
+void Read_Compass(void)
+void PCA_ISR(void) interrupt 9;
+
+
+main function
+
+	declare local variables
+
+	initialize system, ports and PCA
+
+	Print beginning messages
+	begin infinite loop
+		Steering_Servo()
+		Every second print desired heading, actual heading, and pulse width
+	end infinite loop
+
+end main function
+
+Port_Init()
+	Set up P1MDOUT, P3MDOUT, and P3
+End Port_Init
+
+XBR0_Init()
+	Set up XBR0
+End XBR0_Init
+
+SMB_Init(void)
+	Set up SMBus
+End SMB_Init
+
+PCA_Init(void)
+	Set up PCA0MD, PCA0CPM1, and PCA0CN
+End PCA_Init
+
+void Interrupt_Init(void)
+	Set up PCA and all interrupts
+End Interrupt_Init
+
+void PCA_ISR (void) interrupt 9
+	Handle PCA interrupt with PCA0 and CF
+End PCA_ISR
+
+void Read_Compass(void)
+	read compass value into an array
+	store array in heading
+End Read_Compass
+
+void Steering_Servo(void)
+	declare local variables
+
+	Every 40ms, Read_Compass()
+
+	Calculate error
+	Fix error if out of bounds
+	Calculate temp pulsewidth
+
+	if slide switch on
+		if temp > PW_RIGHT
+			SERVO_PW = PW_RIGHT
+		if temp < PW_LEFT
+			SERVO_PW = PW_LEFT
+		otherwise
+			SERVER_PW = temp
+
+	else
+		SERVO_PW = PW_CENTER
+
+end Steering_Servo 

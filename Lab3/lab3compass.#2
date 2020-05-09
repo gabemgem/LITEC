@@ -1,0 +1,123 @@
+/* Name: Gabriel Maayan
+Section: 2B
+Lab 3.2 Code to get readings from the compass.
+*/
+#include <c8051_SDCC.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <i2c.h>
+//-----------------------------------------------------------------------------
+// 8051 Initialization Functions
+//-----------------------------------------------------------------------------
+void Port_Init(void);
+void PCA_Init (void);
+void Interrupt_Init(void);
+void XBR0_Init();
+void SMB_Init(void);
+void PCA_ISR ( void ) __interrupt 9;
+void Read_Compass(void);
+
+unsigned int PCA_start = 28671;
+unsigned int reading=0;
+unsigned int count = 0;
+unsigned int print_count=0;
+unsigned char input;
+unsigned char buffer[2];
+//-----------------------------------------------------------------------------
+// Main Function
+//-----------------------------------------------------------------------------
+void main(void)
+{
+
+	// initialize board
+	Sys_Init();
+	putchar(' '); //the quotes in this line may not format correctly
+
+
+	XBR0_Init();
+	
+	PCA_Init();
+	SMB_Init();
+	Interrupt_Init();
+	//print beginning message
+	printf("\n\rCompass Reading\n\r");
+	count=0;
+	while(1) {
+		if(count>=2) {
+			print_count++;
+			Read_Compass();
+			if(print_count>=25) {
+				printf("Reading: %u\n\r", reading);
+				print_count=0;
+			}
+			count=0;
+		}
+	}
+	
+}
+//-----------------------------------------------------------------------------
+// Port_Init
+//-----------------------------------------------------------------------------
+//
+// Set up ports for input and output
+//
+void Port_Init()
+{
+	//P0MDOUT = 0xC0;//set output pin for CEX0 in push-pull mode
+}
+//-----------------------------------------------------------------------------
+// XBR0_Init
+//-----------------------------------------------------------------------------
+//
+// Set up the crossbar
+//
+void XBR0_Init()
+{
+	XBR0 = 0x27 ; //configure crossbar with UART, SPI, SMBus, and CEX channels as
+// in worksheet
+}
+
+void SMB_Init(void) {
+	SMB0CR = 0x93; //run at 100kHZ
+	ENSMB = 1; //enable smbus
+}
+//-----------------------------------------------------------------------------
+// PCA_Init
+//-----------------------------------------------------------------------------
+//
+// Set up Programmable Counter Array
+//
+void PCA_Init(void)
+{
+	PCA0MD = 0x81; //SYSCLK/12, enable CF interrupts, suspend when idle
+	PCA0CPM0 = 0xC2; //16 bit, enable compare, enable PWM
+	PCA0CN |= 0x40; // enable PCA
+}
+
+void Interrupt_Init(void)
+{
+	EIE1 |= 0x08;//enable PCA interrupts
+	EA=1;//enable all interrupts
+}
+//-----------------------------------------------------------------------------
+// PCA_ISR
+//-----------------------------------------------------------------------------
+//
+// Interrupt Service Routine for Programmable Counter Array Overflow Interrupt
+//
+void PCA_ISR ( void ) __interrupt 9
+{
+	if(CF) {
+		PCA0 = PCA_start;//Start count
+		CF=0;//clear interrupt flag
+		count++;
+	}
+	else PCA0CN &= 0xC0;//all other type 9 interrupts
+}
+
+void Read_Compass(void) {
+	i2c_read_data(0xC0, 2, buffer, 2);//read two bytes starting at reg. 2
+	reading = ((unsigned int)buffer[0]<<8) | buffer[1];//combine data
+}
+
+

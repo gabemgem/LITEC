@@ -1,0 +1,56 @@
+compiler directives
+#include <c8051_SDCC.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <i2c.h>
+
+declare global variables
+unsigned int PCA_start, reading, count, print_count
+unsigned char input
+
+function prototypes
+void Port_Init(void)
+void PCA_Init(void)
+void Interrupt_Init(void)
+void XBR0_Init()
+void SMB_Init()
+void Read_Compass(void)
+void PCA_ISR(void) interrupt 9;
+
+
+main function
+
+	declare local variables
+
+	initialize system, SMB and PCA
+
+	begin infinite loop
+		if 40ms has passed
+			get compass reading
+			every 5 readings print compass reading
+	end infinite loop
+
+end main function
+
+XBR0_Init()
+	Configure crossbar with UART0, SPI, SMBus, and CEX for lab 3
+End XBR0_Init
+
+SMB_Init()
+	Set up SMB0CR
+	Enable the SMBus
+End SMB_Init
+
+PCA_Init(void)
+	Set up PCA0MD, PCA0CPM1, and PCA0CN
+End PCA_Init
+
+void PCA_ISR (void) interrupt 9
+	Handle PCA interrupt with PCA0 and CF
+End PCA_ISR
+
+void Read_Compass()
+	Initialize data array
+	i2c_read 2 bytes starting from the 2nd register of the compass to data array
+	combine data into one variable(reading)
+end Compass_Reading

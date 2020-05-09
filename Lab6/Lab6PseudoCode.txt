@@ -1,0 +1,139 @@
+compiler directives
+#include <c8051_SDCC.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <i2c.h>
+
+declare global variables
+unsigned char ccount, rcount, count, print_count, input
+signed int heading, desired, desired_original, error, prev_error
+unsigned int battery, rangervalue, kd, PW_vert, angle_PW
+signed long left_PW, right_PW
+float kp
+unsigned char[] Data
+
+define PCA_start, PW_neut, PW_max, PW_min
+
+function prototypes
+void Port_Init(void)
+void PCA_Init(void)
+void Interrupt_Init(void)
+void XBR0_Init(void)
+void SMB_Init(void)
+void ADC_Init(void)
+void ADC_Convert(void)
+
+void Steering_Servo(void)
+void Read_Compass(void)
+void PCA_ISR(void) __interrupt 9
+void Ranger(void)
+unsigned int ReadRanger(void)
+
+
+main function
+	initialize system, ports, PCA
+
+	Get desired heading
+	Calibrate rotor angle
+
+	Start infinite loop
+		Steering_Servo()
+		Ranger()
+	End infinite loop
+End main function
+
+Port_Init()
+	Set up P0MDOUT, P1MDOUT, and P1
+End Port_Init
+
+XBR0_Init()
+	Set up XBR0
+End XBR0_Init
+
+SMB_Init(void)
+	Set up SMBus
+End SMB_Init
+
+PCA_Init(void)
+	Set up PCA0MD, PCA0CPM(1,2,3), and PCA0CN
+End PCA_Init
+
+void Interrupt_Init(void)
+	Set up PCA and all interrupts
+End Interrupt_Init
+
+void PCA_ISR (void) interrupt 9
+	Handle PCA interrupt with PCA0 and CF
+	Increment count, ccount, and rcount
+End PCA_ISR
+
+void ADC_Init(void)
+	Set up ADC
+End ADC_Init
+
+void ADC_Convert(void)
+	Set ADC to convert on pin 1.3
+	clear flag
+	start conversion
+	wait for conversion to finish
+	store adc value in battery
+End ADC_Convert
+
+unsigned int ReadRanger(void)
+	Set up local variables
+		unsigned int range
+		unsigned char addr
+	read data from the ranger into Data[]
+	return the data
+End ReadRanger
+
+void Ranger(void)
+	Every 80ms
+		get Ranger value
+		send ping to Ranger
+
+	If value is between 45 and 55
+		Keep desired heading the same as original
+
+	If value is below 45
+		If value is below 5
+			Set desired heading 180 degrees less than original
+		Otherwise
+			Set desired heading between 0 and 180 degrees less than original
+
+	If value is above 55
+		If value is above 95
+			Set desired heading 180 degrees more than original
+		Otherwise
+			Set desired heading between 0 and 180 degrees more than original
+
+	Adjust desired heading if above 360 or below 0
+
+End Ranger
+
+void Read_Compass(void)
+	read compass data into Data[]
+	store data into heading
+End Read_Compass
+
+void Steering_Servo(void)
+	Every 40ms
+		get Compass value
+		increment print_count
+
+	calculate error
+	adjust error if greater than 180 or less than -180
+
+	calculate left and right pulsewidths from kp, error, kd, and error-prev_error
+
+	adjust left and right pulsewidths if out of bounds
+
+	Every 1 seconds
+		ADC_Convert
+		calculate battery voltage in mV
+		print Desired heading, heading, ranger value, pulsewidth, and battery voltage in mV
+
+	Set speed controllers
+
+	Set prev_error
+End Steering_Servo

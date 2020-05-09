@@ -1,0 +1,313 @@
+/* 
+   Name: Gabriel Maayan, Amina Ali, Maria Hill
+   Sec: 2B
+   Code for Lab 4. This program can be used to control the steering servo and 
+   motor using data from the compass and ranger.
+*/
+#include <c8051_SDCC.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <i2c.h>
+//-----------------------------------------------------------------------------
+// 8051 Initialization Functions
+//-----------------------------------------------------------------------------
+void Port_Init(void);
+void PCA_Init (void);
+void Interrupt_Init(void);
+void XBR0_Init();
+void SMB_Init(void);
+void ADC_Init(void);
+void ADC_Convert(void);
+
+void Steering_Servo(void);
+void Read_Compass(void);
+void PCA_ISR ( void ) __interrupt 9;
+
+void Ranger(void);
+unsigned int ReadRanger(void);
+
+unsigned int PCA_start = 28671;
+unsigned char ccount = 0;//counter for the compass
+unsigned char rcount = 0;//counter for the ranger
+unsigned int heading = 2100;//actual heading, updated from compass
+unsigned int desired = 2100;//desired heading, set by user
+unsigned int rangervalue = 45;//holds ranger reading
+unsigned int print_count = 0;//counter for printing readings
+unsigned char input;
+unsigned char Data[2];
+unsigned char adc=0;//holds potentiometer data
+unsigned char loopcontrol=0;//controls loops, used instead of break statements
+
+//--------------------Servo Variables------------------------//
+unsigned int PW_CENTER = 2764;
+unsigned int PW_RIGHT = 3474;
+unsigned int PW_LEFT = 2384;
+unsigned int SERVO_PW = 2764;
+int error=0;
+float k=2;//gain, set by potentiometer
+unsigned int temp=0;
+
+//--------------------Motor Variables------------------------//
+unsigned int PW_MIN = 2027;      //1.1 ms  ((MAX-PCA_Start)/20) *(1.1)
+unsigned int PW_MAX = 3502;      //1.9 
+unsigned int PW_NEUT = 2764;
+unsigned int MOTOR_PW = 2764;
+unsigned char obstacle=0;
+unsigned char stop=0;
+
+__sbit __at 0xB7 SS;//slide switch
+//-----------------------------------------------------------------------------
+// Main Function
+//-----------------------------------------------------------------------------
+void main(void)
+{
+
+	// initialize board
+	Sys_Init();
+	putchar(' '); //the quotes in this line may not format correctly
+	Port_Init();
+	ADC_Init();
+	XBR0_Init();
+	PCA_Init();
+	SMB_Init();
+	Interrupt_Init();
+
+	//print beginning menu
+	printf("Car control menu:\n\r");
+	printf("Choose a desired heading from the options below:\n\r");
+	while(!loopcontrol) {//loop until it gets valid input
+		printf("1) 0 degrees\n\r2) 90 degrees\n\r3) 180 degrees\n\r4) 270 degrees\n\r");
+		input = getchar();
+		if(input=='1') {
+			desired=0;
+			loopcontrol=1;
+		}
+		else if(input=='2') {
+			desired=900;
+			loopcontrol=1;
+		}
+		else if(input=='3') {
+			desired=1800;
+			loopcontrol=1;
+		}
+		else if(input=='4') {
+			desired=2700;
+			loopcontrol=1;
+		}
+		else
+			printf("Invalid input:%u, Please enter valid input.\n\r", input);
+	}
+	printf("Now use the potentiometer to select a steering gain.\n\r");
+	printf("Switch the slide switch when finished.\n\r");
+	temp=SS;//store value of slide switch
+	ccount=0;//reset timer
+	while(SS==temp) {//loops until user switches the slide switch
+		while(ccount<40);//wait ~800ms
+		ADC_Convert();//get POT value
+		k=(adc/255.0)*10.2;//calculate gain
+		printf("Current value*100: %d\n\r", (int)(k*100));//print gain
+		ccount=0;//reset timer
+	}
+	printf("Final gain*100:%d\n\r", (int)(k*100));//print the final gain value
+	
+	//set initial value for steering (set to center)
+	SERVO_PW = PW_CENTER;
+	MOTOR_PW = PW_NEUT;
+	lcd_clear();
+	ccount=0;
+	rcount=0;
+	while(1) {
+		Steering_Servo();//Servo control with compass
+		Ranger();//Motor control with ranger
+		if(print_count>=25) {//print data every 1 seconds
+			lcd_clear();
+			lcd_print("Heading: %u\nRanger Value: %u", heading, rangervalue);
+			printf("\n\rHeading: %u\t\tRanger Value: %u\tdPW: %d\n\r", heading, rangervalue, SERVO_PW-PW_CENTER);
+			print_count=0;
+		}
+	}
+}
+//-----------------------------------------------------------------------------
+// Port_Init
+//-----------------------------------------------------------------------------
+//
+// Set up ports for input and output
+//
+void Port_Init()
+{
+	P1MDOUT = 0x05;//set output pin for CEX0,2 in push-pull mode
+	P1 |= 0x80;	   //also set pin for POT in open-drain mode
+	P3MDOUT &= ~0x80;//set pin for slide switch in open-drain mode
+	P3 |=0x80;
+}
+//-----------------------------------------------------------------------------
+// XBR0_Init
+//-----------------------------------------------------------------------------
+//
+// Set up the crossbar
+//
+void XBR0_Init()
+{
+	XBR0 = 0x1F; //configure crossbar with UART, SPI, SMBus, and CEX channels 0,1,2
+}
+
+void SMB_Init(void) {//Set up i2c
+	SMB0CR = 0x93; //run at 100kHZ
+	ENSMB = 1; //enable smbus
+}
+
+void ADC_Init(void) {		//initialize ADC
+	REF0CN = 0x03; 			//set Vref to use 2.4V
+	ADC1CF |= 0x01;			//set gain of 1
+	ADC1CN = 0x80; 			//enable A/D converter
+	
+}
+
+void ADC_Convert(void) {	//get POT value
+	AMX1SL = 7;				//Set ADC to convert value on pin 7
+	ADC1CN &= ~0x20;//clear flag		
+	ADC1CN |= 0x10;//start conversion
+	while((ADC1CN & 0x20)==0x00);//wait for conversion to finish
+	adc = ADC1;//store adc value
+}
+
+void PCA_Init(void)
+{
+	PCA0MD = 0x81; //SYSCLK/12, enable CF interrupts, suspend when idle
+	PCA0CPM0 = 0xC2; //16 bit, enable compare, enable PWM
+	PCA0CPM2 = 0xC2; //set up CEX2 the same as CEX0
+	PCA0CN |= 0x40; // enable PCA
+}
+
+void Interrupt_Init(void)
+{
+	EIE1 |= 0x08;//enable PCA interrupts
+
+	EA=1;//enable all interrupts
+}
+
+void PCA_ISR ( void ) __interrupt 9
+{
+	if(CF) {
+		PCA0 = PCA_start;//Start count
+		CF=0;//clear interrupt flag
+		ccount++;//increment compass counter
+		rcount++;//increment ranger counter
+	}
+	else PCA0CN &= 0xC0;//all other type 9 interrupts
+}
+
+void Read_Compass(void) {
+	i2c_read_data(0xC0, 2, Data, 2);//read two bytes starting at reg. 2
+	heading = (((unsigned int)Data[0]<<8) | Data[1]);//combine data
+}
+
+unsigned int ReadRanger()
+{
+ 	unsigned int range =0; 
+ 	unsigned char addr=0xE0;           // the address of the ranger is 0xE0 
+ 	i2c_read_data(addr,2, Data, 2);    // read two bytes, starting at reg 2 
+ 	range = (((unsigned int)Data[0] << 8) | Data[1]);    //value read from i2c 
+ 	return range;
+}
+
+void Ranger(void)//function to control the motor with the ranger
+{
+	
+	
+	//If 80ms has passed
+	if(rcount>=4) {
+		rangervalue = ReadRanger();//get ranger value
+		Data[0] = 0x51;                //sets results in cm
+		i2c_write_data(0xE0,0,Data,1);    //Write one byte of data to reg 0 at addr			
+		rcount=0;
+	}
+
+	if(rangervalue<30 && !SS && !stop) {//if it detects an obstacle and program is running
+		if(obstacle>=1) {//if this is the second obstacle
+			printf("Second obstacle found\n\r");
+			stop=1;//stop the car
+		}
+		else {
+			temp=MOTOR_PW;//store pulsewidth
+			MOTOR_PW=PW_NEUT;//stop car
+			PCA0CP2 = 0xFFFF - MOTOR_PW;
+			obstacle++;
+			printf("Obstacle detected. Press 'r' or 'l' to steer around obstacle.");
+			input=getchar();//print instructions and get user input
+			loopcontrol=0;
+			while(!loopcontrol) {//wait until it gets valid input
+				if(input=='l' || input=='L') {//set steering to all the way left
+					SERVO_PW = PW_LEFT;
+					loopcontrol=1;
+				}
+				else if(input=='r' || input=='R') {//set steering to max right
+					SERVO_PW = PW_RIGHT;
+					loopcontrol=1;
+				}
+				else {
+					printf("Invalid input. Please enter 'l' or 'r'.\n\r");
+					input=getchar();
+				}
+			}
+			PCA0CP0 = 0xFFFF - SERVO_PW;
+			printf("\n\rPress space when the car is around the obstacle\n\r");
+			MOTOR_PW = temp;
+			PCA0CP2 = 0xFFFF - MOTOR_PW;
+
+			getchar();//run in that direction until user presses a character
+				
+			Data[0] = 0x51;                //write 0x51 to reg 0 of the ranger, sets results in cm
+			i2c_write_data(0xE0,0,Data,1);    //Write one byte of data to reg 0 at addr
+			rcount=0;
+			while(rcount<4);
+			rangervalue=ReadRanger();//make a read from the ranger that does nothing
+									 //this is to clear out any bad data
+			rcount=0;
+		}
+	}
+	  
+	if(!SS && !stop) {//if program is running
+		
+			//Motor is running forwards
+		MOTOR_PW = PW_MAX-400;
+		
+	}
+	else//if program is stopped
+		MOTOR_PW = PW_NEUT;//motor is stopped
+
+	PCA0CP2 = 0xFFFF - MOTOR_PW;
+	
+}
+
+void Steering_Servo()//function to control the steering with the compass
+{
+	
+	if(ccount>=2) {//every 40ms read the compass
+		print_count++;
+		Read_Compass();
+		ccount=0;
+	}
+
+	error=desired-heading;//calculate error
+	if(error>1800)//adjust error if out of bounds
+		error-=3600;
+	else if(error<-1800)
+		error+=3600;
+
+	temp = (float)error*k+PW_CENTER;//calculate pulsewidth
+	if(!SS && !stop) {//if program is running
+		if(temp>PW_RIGHT)//adjust pulsewidth if out of bounds
+			SERVO_PW=PW_RIGHT;
+		else if(temp<PW_LEFT)
+			SERVO_PW=PW_LEFT;
+		else
+			SERVO_PW=temp;
+	}
+	else//if program is stopped
+		SERVO_PW=PW_CENTER;
+	
+	PCA0CPL0 = 0xFFFF - SERVO_PW;//set servo
+	PCA0CPH0 = (0xFFFF - SERVO_PW) >> 8;
+}
+

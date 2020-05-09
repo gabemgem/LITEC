@@ -1,0 +1,150 @@
+/* Sample code for Lab 3.1. This program can be used to test the steering servo */
+#include <c8051_SDCC.h>
+#include <stdio.h>
+#include <stdlib.h>
+//-----------------------------------------------------------------------------
+// 8051 Initialization Functions
+//-----------------------------------------------------------------------------
+void Port_Init(void);
+void PCA_Init (void);
+void XBR0_Init();
+void Steering_Servo(void);
+void PCA_ISR ( void ) __interrupt 9;
+
+unsigned int PW_CENTER = 4915;
+unsigned int PW_RIGHT = 6881;
+unsigned int PW_LEFT = 2949;
+unsigned int SERVO_PW = 4915;
+unsigned int PCA_start = 36864;
+unsigned char input;
+//-----------------------------------------------------------------------------
+// Main Function
+//-----------------------------------------------------------------------------
+void main(void)
+{
+	char input;
+	// initialize board
+	Sys_Init();
+	putchar(' '); //the quotes in this line may not format correctly
+	Port_Init();
+	XBR0_Init();
+	PCA_Init();
+	//print beginning message
+	printf("Embedded Control Steering Calibration\n");
+	printf("\rPress \"r\" and \"l\" to turn the wheels right and left until they are centered, then press space.\n");
+	input=getchar();
+	while(input!=' ') {
+		if(input == 'r') //if 'r' is pressed by the user
+		{
+			SERVO_PW = SERVO_PW + 10; //increase the steering pulsewidth by 10
+		}
+		else if(input == 'l') //if 'l' is pressed by the user
+		{
+			SERVO_PW = SERVO_PW - 10; //decrease the steering pulsewidth by 10
+		}
+		//printf("SERVO_PW: %u\n", SERVO_PW);
+		PCA0CPL0 = 0xFFFF - SERVO_PW;
+		PCA0CPH0 = (0xFFFF - SERVO_PW) >> 8;
+		input=getchar();
+	}
+	PW_CENTER=SERVO_PW;
+
+	printf("\r\nPress \"l\" until the wheels are in the left most position, then press space.\n");
+	printf("\rThe steering mechanism should not be stressed.\n");
+	input=getchar();
+	while(input!=' ') {
+		if(input == 'l')
+			SERVO_PW = SERVO_PW - 10;
+
+		PCA0CPL0 = 0xFFFF - SERVO_PW;
+		PCA0CPH0 = (0xFFFF - SERVO_PW) >> 8;
+		input=getchar();
+	}
+	PW_LEFT=SERVO_PW;
+	SERVO_PW = PW_CENTER;
+	PCA0CPL0 = 0xFFFF - SERVO_PW;
+	PCA0CPH0 = (0xFFFF - SERVO_PW) >> 8;
+
+	printf("\r\nPress \"r\" until the wheels are in the right most position, then press space.\n");
+	printf("\rThe steering mechanism should not be stressed.\n");
+	input=getchar();
+	while(input!=' ') {
+		if(input == 'r')
+			SERVO_PW = SERVO_PW + 10;
+
+		PCA0CPL0 = 0xFFFF - SERVO_PW;
+		PCA0CPH0 = (0xFFFF - SERVO_PW) >> 8;
+		input=getchar();
+	}
+	PW_RIGHT=SERVO_PW;
+	//set initial value for steering (set to center)
+	SERVO_PW = PW_CENTER;
+	while(1)
+		Steering_Servo();
+}
+//-----------------------------------------------------------------------------
+// Port_Init
+//-----------------------------------------------------------------------------
+//
+// Set up ports for input and output
+//
+void Port_Init()
+{
+	P1MDOUT = 0x10;//set output pin for CEX0 in push-pull mode
+}
+//-----------------------------------------------------------------------------
+// XBR0_Init
+//-----------------------------------------------------------------------------
+//
+// Set up the crossbar
+//
+void XBR0_Init()
+{
+	XBR0 = 0x0D ; //configure crossbar with UART, SPI, SMBus, and CEX channels as
+// in worksheet
+}
+//-----------------------------------------------------------------------------
+// PCA_Init
+//-----------------------------------------------------------------------------
+//
+// Set up Programmable Counter Array
+//
+void PCA_Init(void)
+{
+	PCA0MD = 0x81;
+	PCA0CPM0 = 0xC2;
+	PCA0CN = 0x40;
+}
+//-----------------------------------------------------------------------------
+// PCA_ISR
+//-----------------------------------------------------------------------------
+//
+// Interrupt Service Routine for Programmable Counter Array Overflow Interrupt
+//
+void PCA_ISR ( void ) __interrupt 9
+{
+	if(CF) {
+		PCA0 = PCA_start;
+		CF=0;
+	}
+	else PCA0CN &= 0xC0;
+}
+void Steering_Servo()
+{
+	
+	//wait for a key to be pressed
+	input = getchar();
+	if(input == 'r') //if 'r' is pressed by the user
+	{
+		if(SERVO_PW < PW_RIGHT)
+			SERVO_PW = SERVO_PW + 10; //increase the steering pulsewidth by 10
+	}
+	else if(input == 'l') //if 'l' is pressed by the user
+	{
+		if(SERVO_PW > PW_LEFT)
+			SERVO_PW = SERVO_PW - 10; //decrease the steering pulsewidth by 10
+	}
+	printf("SERVO_PW: %u\n", SERVO_PW);
+	PCA0CPL0 = 0xFFFF - SERVO_PW;
+	PCA0CPH0 = (0xFFFF - SERVO_PW) >> 8;
+}

@@ -1,0 +1,83 @@
+compiler directives
+#include <c8051_SDCC.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+declare global variables
+unsigned int PW_CENTER, PW_RIGHT, PW_LEFT, SERVO_PW
+unsigned char input
+
+function prototypes
+void Port_Init(void)
+void PCA_Init(void)
+void XBR0_Init()
+void Calibrate_Server(void)
+void Steering_Servo(void)
+void PCA_ISR(void) interrupt 9;
+
+
+main function
+
+	declare local variables
+
+	initialize system, ports and PCA
+
+	Print beginning messages
+	Calibrate_Servo()
+	begin infinite loop
+		Steering_Servo()
+	end infinite loop
+
+end main function
+
+Port_Init()
+	Set up P1MDOUT
+End Port_Init
+
+XBR0_Init()
+	Set up XBR0
+End XBR0_Init
+
+PCA_Init(void)
+	Set up PCA0MD, PCA0CPM1, and PCA0CN
+End PCA_Init
+
+void PCA_ISR (void) interrupt 9
+	Handle PCA interrupt with PCA0 and CF
+End PCA_ISR
+
+void Calibrate_Servo(void)
+	declare local variables
+	Print instructions to find center
+	while user has not entered a space
+		if 'r'
+			increase steering pulsewidth by 10
+		if 'l'
+			decrease steering pulsewidth by 10
+	end while
+
+	Print instructions to find right limit
+	while user has not entered a space
+		if 'r'
+			increase steering pulsewidth by 10
+	end while
+
+	Print instructions to by left limit
+	while user has not entered a space
+		if 'l'
+			decrease steering pulsewidth by 10
+End Calibrate_Servo
+
+void Steering_Servo(void)
+	declare local variables
+	wait for key stroke
+	if 'r'
+		if not at right limit
+			increase the steering pulsewidth by 10
+	else if 'l'
+		if not at left limit
+			decrease the steering pulsewidth by 10
+
+	print out the servo pulsewidth
+	reset PCA0CPL0 and PCA0CPH0
+end Steering_Servo 

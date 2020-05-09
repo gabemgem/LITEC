@@ -1,0 +1,2288 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000000  l_BIT_BANK                      
+C:   00000000  l_CABS                          
+C:   00000000  l_GSINIT                        
+C:   00000000  l_GSINIT1                       
+C:   00000000  l_GSINIT5                       
+C:   00000000  l_IABS                          
+C:   00000000  l_PSEG                          
+C:   00000000  l_REG_BANK_1                    
+C:   00000000  l_REG_BANK_2                    
+C:   00000000  l_REG_BANK_3                    
+C:   00000000  l_RSEG                          
+C:   00000000  l_RSEG0                         
+C:   00000000  l_RSEG1                         
+C:   00000000  l_XABS                          
+C:   00000000  l_XINIT                         
+C:   00000000  l_XISEG                         
+C:   00000000  l__CODE                         
+C:   00000000  s_BSEG                          
+C:   00000000  s_CABS                          
+C:   00000000  s_DSEG                          
+C:   00000000  s_HOME                          
+C:   00000000  s_IABS                          
+C:   00000000  s_REG_BANK_0                    
+C:   00000000  s_RSEG                          
+C:   00000000  s_RSEG0                         
+C:   00000000  s_RSEG1                         
+C:   00000000  s_XABS                          
+C:   00000001  s_PSEG                          
+C:   00000001  s_XSEG                          
+C:   00000002  l_BSEG_BYTES                    
+C:   00000003  l_GSFINAL                       
+C:   00000003  l_GSINIT0                       
+C:   00000006  l_ISEG                          
+C:   00000006  l_OSEG                          
+C:   00000008  l_REG_BANK_0                    
+C:   00000008  s_REG_BANK_1                    
+C:   0000000A  l_BSEG                          
+C:   0000000A  l_GSINIT2                       
+C:   00000010  s_REG_BANK_2                    
+C:   00000018  s_BIT_BANK                      
+C:   00000018  s_REG_BANK_3                    
+C:   00000020  s_BSEG_BYTES                    
+C:   00000020  s__CODE                         
+C:   00000022  l_GSINIT3                       
+C:   0000002A  l_GSINIT4                       
+C:   00000045  s_OSEG                          
+C:   0000004B  s_ISEG                          
+C:   00000050  l_XSEG                          
+C:   00000051  l_HOME                          
+C:   00000051  s_GSINIT0                       
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000051  s_SSEG                          
+C:   00000051  s_XISEG                         
+C:   00000054  s_GSINIT1                       
+C:   00000054  s_GSINIT2                       
+C:   0000005E  s_GSINIT3                       
+C:   00000080  l_DSEG                          
+C:   00000080  s_GSINIT4                       
+C:   000000AA  s_GSFINAL                       
+C:   000000AA  s_GSINIT                        
+C:   000000AA  s_GSINIT5                       
+C:   000000AC  l_CONST                         
+C:   000000AD  s_CSEG                          
+C:   000000AF  l_SSEG                          
+C:   00000100  l_IRAM                          
+C:   00000D9E  l_CSEG                          
+C:   00000E4B  s_CONST                         
+C:   00000EF7  s_XINIT                         
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           _startup
+     00000080  G$P0$0$0                           kpdlcdtestPCA
+     00000080  G$P0_0$0$0                         kpdlcdtestPCA
+     00000080  _P0                                kpdlcdtestPCA
+     00000080  _P0_0                              kpdlcdtestPCA
+     00000081  G$P0_1$0$0                         kpdlcdtestPCA
+     00000081  G$SP$0$0                           kpdlcdtestPCA
+     00000081  _P0_1                              kpdlcdtestPCA
+     00000081  _SP                                kpdlcdtestPCA
+     00000082  G$DPL$0$0                          kpdlcdtestPCA
+     00000082  G$P0_2$0$0                         kpdlcdtestPCA
+     00000082  _DPL                               kpdlcdtestPCA
+     00000082  _P0_2                              kpdlcdtestPCA
+     00000083  G$BUS_SCL$0$0                      kpdlcdtestPCA
+     00000083  G$DPH$0$0                          kpdlcdtestPCA
+     00000083  G$P0_3$0$0                         kpdlcdtestPCA
+     00000083  _BUS_SCL                           kpdlcdtestPCA
+     00000083  _DPH                               kpdlcdtestPCA
+     00000083  _P0_3                              kpdlcdtestPCA
+     00000084  G$P0_4$0$0                         kpdlcdtestPCA
+     00000084  G$P4$0$0                           kpdlcdtestPCA
+     00000084  _P0_4                              kpdlcdtestPCA
+     00000084  _P4                                kpdlcdtestPCA
+     00000085  G$P0_5$0$0                         kpdlcdtestPCA
+     00000085  G$P5$0$0                           kpdlcdtestPCA
+     00000085  _P0_5                              kpdlcdtestPCA
+     00000085  _P5                                kpdlcdtestPCA
+     00000086  G$P0_6$0$0                         kpdlcdtestPCA
+     00000086  G$P6$0$0                           kpdlcdtestPCA
+     00000086  _P0_6                              kpdlcdtestPCA
+     00000086  _P6                                kpdlcdtestPCA
+     00000087  G$P0_7$0$0                         kpdlcdtestPCA
+     00000087  G$PCON$0$0                         kpdlcdtestPCA
+     00000087  _P0_7                              kpdlcdtestPCA
+     00000087  _PCON                              kpdlcdtestPCA
+     00000088  G$IT0$0$0                          kpdlcdtestPCA
+     00000088  G$TCON$0$0                         kpdlcdtestPCA
+     00000088  _IT0                               kpdlcdtestPCA
+     00000088  _TCON                              kpdlcdtestPCA
+     00000089  G$IE0$0$0                          kpdlcdtestPCA
+     00000089  G$TMOD$0$0                         kpdlcdtestPCA
+     00000089  _IE0                               kpdlcdtestPCA
+     00000089  _TMOD                              kpdlcdtestPCA
+     0000008A  G$IT1$0$0                          kpdlcdtestPCA
+     0000008A  G$TL0$0$0                          kpdlcdtestPCA
+     0000008A  _IT1                               kpdlcdtestPCA
+     0000008A  _TL0                               kpdlcdtestPCA
+     0000008B  G$IE1$0$0                          kpdlcdtestPCA
+     0000008B  G$TL1$0$0                          kpdlcdtestPCA
+     0000008B  _IE1                               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000008B  _TL1                               kpdlcdtestPCA
+     0000008C  G$TH0$0$0                          kpdlcdtestPCA
+     0000008C  G$TR0$0$0                          kpdlcdtestPCA
+     0000008C  _TH0                               kpdlcdtestPCA
+     0000008C  _TR0                               kpdlcdtestPCA
+     0000008D  G$TF0$0$0                          kpdlcdtestPCA
+     0000008D  G$TH1$0$0                          kpdlcdtestPCA
+     0000008D  _TF0                               kpdlcdtestPCA
+     0000008D  _TH1                               kpdlcdtestPCA
+     0000008E  G$CKCON$0$0                        kpdlcdtestPCA
+     0000008E  G$TR1$0$0                          kpdlcdtestPCA
+     0000008E  _CKCON                             kpdlcdtestPCA
+     0000008E  _TR1                               kpdlcdtestPCA
+     0000008F  G$PSCTL$0$0                        kpdlcdtestPCA
+     0000008F  G$TF1$0$0                          kpdlcdtestPCA
+     0000008F  _PSCTL                             kpdlcdtestPCA
+     0000008F  _TF1                               kpdlcdtestPCA
+     00000090  G$P1$0$0                           kpdlcdtestPCA
+     00000090  G$P1_0$0$0                         kpdlcdtestPCA
+     00000090  _P1                                kpdlcdtestPCA
+     00000090  _P1_0                              kpdlcdtestPCA
+     00000091  G$P1_1$0$0                         kpdlcdtestPCA
+     00000091  G$TMR3CN$0$0                       kpdlcdtestPCA
+     00000091  _P1_1                              kpdlcdtestPCA
+     00000091  _TMR3CN                            kpdlcdtestPCA
+     00000092  G$P1_2$0$0                         kpdlcdtestPCA
+     00000092  G$TMR3RLL$0$0                      kpdlcdtestPCA
+     00000092  _P1_2                              kpdlcdtestPCA
+     00000092  _TMR3RLL                           kpdlcdtestPCA
+     00000093  G$P1_3$0$0                         kpdlcdtestPCA
+     00000093  G$TMR3RLH$0$0                      kpdlcdtestPCA
+     00000093  _P1_3                              kpdlcdtestPCA
+     00000093  _TMR3RLH                           kpdlcdtestPCA
+     00000094  G$P1_4$0$0                         kpdlcdtestPCA
+     00000094  G$TMR3L$0$0                        kpdlcdtestPCA
+     00000094  _P1_4                              kpdlcdtestPCA
+     00000094  _TMR3L                             kpdlcdtestPCA
+     00000095  G$P1_5$0$0                         kpdlcdtestPCA
+     00000095  G$TMR3H$0$0                        kpdlcdtestPCA
+     00000095  _P1_5                              kpdlcdtestPCA
+     00000095  _TMR3H                             kpdlcdtestPCA
+     00000096  G$P1_6$0$0                         kpdlcdtestPCA
+     00000096  G$P7$0$0                           kpdlcdtestPCA
+     00000096  _P1_6                              kpdlcdtestPCA
+     00000096  _P7                                kpdlcdtestPCA
+     00000097  G$P1_7$0$0                         kpdlcdtestPCA
+     00000097  _P1_7                              kpdlcdtestPCA
+     00000098  G$RI$0$0                           kpdlcdtestPCA
+     00000098  G$RI0$0$0                          kpdlcdtestPCA
+     00000098  G$SCON$0$0                         kpdlcdtestPCA
+     00000098  G$SCON0$0$0                        kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000098  _RI                                kpdlcdtestPCA
+     00000098  _RI0                               kpdlcdtestPCA
+     00000098  _SCON                              kpdlcdtestPCA
+     00000098  _SCON0                             kpdlcdtestPCA
+     00000099  G$SBUF$0$0                         kpdlcdtestPCA
+     00000099  G$SBUF0$0$0                        kpdlcdtestPCA
+     00000099  G$TI$0$0                           kpdlcdtestPCA
+     00000099  G$TI0$0$0                          kpdlcdtestPCA
+     00000099  _SBUF                              kpdlcdtestPCA
+     00000099  _SBUF0                             kpdlcdtestPCA
+     00000099  _TI                                kpdlcdtestPCA
+     00000099  _TI0                               kpdlcdtestPCA
+     0000009A  G$RB8$0$0                          kpdlcdtestPCA
+     0000009A  G$RB80$0$0                         kpdlcdtestPCA
+     0000009A  G$SPI0CFG$0$0                      kpdlcdtestPCA
+     0000009A  _RB8                               kpdlcdtestPCA
+     0000009A  _RB80                              kpdlcdtestPCA
+     0000009A  _SPI0CFG                           kpdlcdtestPCA
+     0000009B  G$SPI0DAT$0$0                      kpdlcdtestPCA
+     0000009B  G$TB8$0$0                          kpdlcdtestPCA
+     0000009B  G$TB80$0$0                         kpdlcdtestPCA
+     0000009B  _SPI0DAT                           kpdlcdtestPCA
+     0000009B  _TB8                               kpdlcdtestPCA
+     0000009B  _TB80                              kpdlcdtestPCA
+     0000009C  G$ADC1$0$0                         kpdlcdtestPCA
+     0000009C  G$REN$0$0                          kpdlcdtestPCA
+     0000009C  G$REN0$0$0                         kpdlcdtestPCA
+     0000009C  _ADC1                              kpdlcdtestPCA
+     0000009C  _REN                               kpdlcdtestPCA
+     0000009C  _REN0                              kpdlcdtestPCA
+     0000009D  G$MCE0$0$0                         kpdlcdtestPCA
+     0000009D  G$SM2$0$0                          kpdlcdtestPCA
+     0000009D  G$SM20$0$0                         kpdlcdtestPCA
+     0000009D  G$SPI0CKR$0$0                      kpdlcdtestPCA
+     0000009D  _MCE0                              kpdlcdtestPCA
+     0000009D  _SM2                               kpdlcdtestPCA
+     0000009D  _SM20                              kpdlcdtestPCA
+     0000009D  _SPI0CKR                           kpdlcdtestPCA
+     0000009E  G$CPT0CN$0$0                       kpdlcdtestPCA
+     0000009E  G$SM1$0$0                          kpdlcdtestPCA
+     0000009E  G$SM10$0$0                         kpdlcdtestPCA
+     0000009E  _CPT0CN                            kpdlcdtestPCA
+     0000009E  _SM1                               kpdlcdtestPCA
+     0000009E  _SM10                              kpdlcdtestPCA
+     0000009F  G$CPT1CN$0$0                       kpdlcdtestPCA
+     0000009F  G$S0MODE$0$0                       kpdlcdtestPCA
+     0000009F  G$SM0$0$0                          kpdlcdtestPCA
+     0000009F  G$SM00$0$0                         kpdlcdtestPCA
+     0000009F  _CPT1CN                            kpdlcdtestPCA
+     0000009F  _S0MODE                            kpdlcdtestPCA
+     0000009F  _SM0                               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000009F  _SM00                              kpdlcdtestPCA
+     000000A0  G$P2$0$0                           kpdlcdtestPCA
+     000000A0  G$P2_0$0$0                         kpdlcdtestPCA
+     000000A0  _P2                                kpdlcdtestPCA
+     000000A0  _P2_0                              kpdlcdtestPCA
+     000000A1  G$EMI0TC$0$0                       kpdlcdtestPCA
+     000000A1  G$P2_1$0$0                         kpdlcdtestPCA
+     000000A1  _EMI0TC                            kpdlcdtestPCA
+     000000A1  _P2_1                              kpdlcdtestPCA
+     000000A2  G$P2_2$0$0                         kpdlcdtestPCA
+     000000A2  _P2_2                              kpdlcdtestPCA
+     000000A3  G$EMI0CF$0$0                       kpdlcdtestPCA
+     000000A3  G$P2_3$0$0                         kpdlcdtestPCA
+     000000A3  _EMI0CF                            kpdlcdtestPCA
+     000000A3  _P2_3                              kpdlcdtestPCA
+     000000A4  G$P0MDOUT$0$0                      kpdlcdtestPCA
+     000000A4  G$P2_4$0$0                         kpdlcdtestPCA
+     000000A4  G$PRT0CF$0$0                       kpdlcdtestPCA
+     000000A4  _P0MDOUT                           kpdlcdtestPCA
+     000000A4  _P2_4                              kpdlcdtestPCA
+     000000A4  _PRT0CF                            kpdlcdtestPCA
+     000000A5  G$P1MDOUT$0$0                      kpdlcdtestPCA
+     000000A5  G$P2_5$0$0                         kpdlcdtestPCA
+     000000A5  G$PRT1CF$0$0                       kpdlcdtestPCA
+     000000A5  _P1MDOUT                           kpdlcdtestPCA
+     000000A5  _P2_5                              kpdlcdtestPCA
+     000000A5  _PRT1CF                            kpdlcdtestPCA
+     000000A6  G$P2MDOUT$0$0                      kpdlcdtestPCA
+     000000A6  G$P2_6$0$0                         kpdlcdtestPCA
+     000000A6  G$PRT2CF$0$0                       kpdlcdtestPCA
+     000000A6  _P2MDOUT                           kpdlcdtestPCA
+     000000A6  _P2_6                              kpdlcdtestPCA
+     000000A6  _PRT2CF                            kpdlcdtestPCA
+     000000A7  G$P2_7$0$0                         kpdlcdtestPCA
+     000000A7  G$P3MDOUT$0$0                      kpdlcdtestPCA
+     000000A7  G$PRT3CF$0$0                       kpdlcdtestPCA
+     000000A7  _P2_7                              kpdlcdtestPCA
+     000000A7  _P3MDOUT                           kpdlcdtestPCA
+     000000A7  _PRT3CF                            kpdlcdtestPCA
+     000000A8  G$EX0$0$0                          kpdlcdtestPCA
+     000000A8  G$IE$0$0                           kpdlcdtestPCA
+     000000A8  _EX0                               kpdlcdtestPCA
+     000000A8  _IE                                kpdlcdtestPCA
+     000000A9  G$ET0$0$0                          kpdlcdtestPCA
+     000000A9  G$SADDR0$0$0                       kpdlcdtestPCA
+     000000A9  _ET0                               kpdlcdtestPCA
+     000000A9  _SADDR0                            kpdlcdtestPCA
+     000000AA  G$ADC1CN$0$0                       kpdlcdtestPCA
+     000000AA  G$EX1$0$0                          kpdlcdtestPCA
+     000000AA  _ADC1CN                            kpdlcdtestPCA
+     000000AA  _EX1                               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000AB  G$ADC1CF$0$0                       kpdlcdtestPCA
+     000000AB  G$ET1$0$0                          kpdlcdtestPCA
+     000000AB  _ADC1CF                            kpdlcdtestPCA
+     000000AB  _ET1                               kpdlcdtestPCA
+     000000AC  G$AMX1SL$0$0                       kpdlcdtestPCA
+     000000AC  G$ES$0$0                           kpdlcdtestPCA
+     000000AC  G$ES0$0$0                          kpdlcdtestPCA
+     000000AC  _AMX1SL                            kpdlcdtestPCA
+     000000AC  _ES                                kpdlcdtestPCA
+     000000AC  _ES0                               kpdlcdtestPCA
+     000000AD  G$ET2$0$0                          kpdlcdtestPCA
+     000000AD  G$P3IF$0$0                         kpdlcdtestPCA
+     000000AD  _ET2                               kpdlcdtestPCA
+     000000AD  _P3IF                              kpdlcdtestPCA
+     000000AE  G$SADEN1$0$0                       kpdlcdtestPCA
+     000000AE  _SADEN1                            kpdlcdtestPCA
+     000000AF  G$EA$0$0                           kpdlcdtestPCA
+     000000AF  G$EMI0CN$0$0                       kpdlcdtestPCA
+     000000AF  G$_XPAGE$0$0                       kpdlcdtestPCA
+     000000AF  _EA                                kpdlcdtestPCA
+     000000AF  _EMI0CN                            kpdlcdtestPCA
+     000000AF  __XPAGE                            kpdlcdtestPCA
+     000000B0  G$P3$0$0                           kpdlcdtestPCA
+     000000B0  G$P3_0$0$0                         kpdlcdtestPCA
+     000000B0  _P3                                kpdlcdtestPCA
+     000000B0  _P3_0                              kpdlcdtestPCA
+     000000B1  G$OSCXCN$0$0                       kpdlcdtestPCA
+     000000B1  G$P3_1$0$0                         kpdlcdtestPCA
+     000000B1  _OSCXCN                            kpdlcdtestPCA
+     000000B1  _P3_1                              kpdlcdtestPCA
+     000000B2  G$OSCICN$0$0                       kpdlcdtestPCA
+     000000B2  G$P3_2$0$0                         kpdlcdtestPCA
+     000000B2  _OSCICN                            kpdlcdtestPCA
+     000000B2  _P3_2                              kpdlcdtestPCA
+     000000B3  G$P3_3$0$0                         kpdlcdtestPCA
+     000000B3  _P3_3                              kpdlcdtestPCA
+     000000B4  G$P3_4$0$0                         kpdlcdtestPCA
+     000000B4  _P3_4                              kpdlcdtestPCA
+     000000B5  G$P3_5$0$0                         kpdlcdtestPCA
+     000000B5  G$P74OUT$0$0                       kpdlcdtestPCA
+     000000B5  _P3_5                              kpdlcdtestPCA
+     000000B5  _P74OUT                            kpdlcdtestPCA
+     000000B6  G$FLSCL$0$0                        kpdlcdtestPCA
+     000000B6  G$P3_6$0$0                         kpdlcdtestPCA
+     000000B6  _FLSCL                             kpdlcdtestPCA
+     000000B6  _P3_6                              kpdlcdtestPCA
+     000000B7  G$FLACL$0$0                        kpdlcdtestPCA
+     000000B7  G$P3_7$0$0                         kpdlcdtestPCA
+     000000B7  _FLACL                             kpdlcdtestPCA
+     000000B7  _P3_7                              kpdlcdtestPCA
+     000000B8  G$IP$0$0                           kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000B8  G$PX0$0$0                          kpdlcdtestPCA
+     000000B8  _IP                                kpdlcdtestPCA
+     000000B8  _PX0                               kpdlcdtestPCA
+     000000B9  G$PT0$0$0                          kpdlcdtestPCA
+     000000B9  G$SADEN0$0$0                       kpdlcdtestPCA
+     000000B9  _PT0                               kpdlcdtestPCA
+     000000B9  _SADEN0                            kpdlcdtestPCA
+     000000BA  G$AMX0CF$0$0                       kpdlcdtestPCA
+     000000BA  G$PX1$0$0                          kpdlcdtestPCA
+     000000BA  _AMX0CF                            kpdlcdtestPCA
+     000000BA  _PX1                               kpdlcdtestPCA
+     000000BB  G$AMX0SL$0$0                       kpdlcdtestPCA
+     000000BB  G$PT1$0$0                          kpdlcdtestPCA
+     000000BB  _AMX0SL                            kpdlcdtestPCA
+     000000BB  _PT1                               kpdlcdtestPCA
+     000000BC  G$ADC0CF$0$0                       kpdlcdtestPCA
+     000000BC  G$PS$0$0                           kpdlcdtestPCA
+     000000BC  G$PS0$0$0                          kpdlcdtestPCA
+     000000BC  _ADC0CF                            kpdlcdtestPCA
+     000000BC  _PS                                kpdlcdtestPCA
+     000000BC  _PS0                               kpdlcdtestPCA
+     000000BD  G$P1MDIN$0$0                       kpdlcdtestPCA
+     000000BD  G$PT2$0$0                          kpdlcdtestPCA
+     000000BD  _P1MDIN                            kpdlcdtestPCA
+     000000BD  _PT2                               kpdlcdtestPCA
+     000000BE  G$ADC0L$0$0                        kpdlcdtestPCA
+     000000BE  _ADC0L                             kpdlcdtestPCA
+     000000BF  G$ADC0H$0$0                        kpdlcdtestPCA
+     000000BF  _ADC0H                             kpdlcdtestPCA
+     000000C0  G$BUS_TOE$0$0                      kpdlcdtestPCA
+     000000C0  G$SMB0CN$0$0                       kpdlcdtestPCA
+     000000C0  G$SMBTOE$0$0                       kpdlcdtestPCA
+     000000C0  _BUS_TOE                           kpdlcdtestPCA
+     000000C0  _SMB0CN                            kpdlcdtestPCA
+     000000C0  _SMBTOE                            kpdlcdtestPCA
+     000000C1  G$BUS_FTE$0$0                      kpdlcdtestPCA
+     000000C1  G$SMB0STA$0$0                      kpdlcdtestPCA
+     000000C1  G$SMBFTE$0$0                       kpdlcdtestPCA
+     000000C1  _BUS_FTE                           kpdlcdtestPCA
+     000000C1  _SMB0STA                           kpdlcdtestPCA
+     000000C1  _SMBFTE                            kpdlcdtestPCA
+     000000C2  G$AA$0$0                           kpdlcdtestPCA
+     000000C2  G$BUS_AA$0$0                       kpdlcdtestPCA
+     000000C2  G$SMB0DAT$0$0                      kpdlcdtestPCA
+     000000C2  _AA                                kpdlcdtestPCA
+     000000C2  _BUS_AA                            kpdlcdtestPCA
+     000000C2  _SMB0DAT                           kpdlcdtestPCA
+     000000C3  G$BUS_INT$0$0                      kpdlcdtestPCA
+     000000C3  G$SI$0$0                           kpdlcdtestPCA
+     000000C3  G$SMB0ADR$0$0                      kpdlcdtestPCA
+     000000C3  _BUS_INT                           kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000C3  _SI                                kpdlcdtestPCA
+     000000C3  _SMB0ADR                           kpdlcdtestPCA
+     000000C4  G$ADC0GTL$0$0                      kpdlcdtestPCA
+     000000C4  G$BUS_STOP$0$0                     kpdlcdtestPCA
+     000000C4  G$STO$0$0                          kpdlcdtestPCA
+     000000C4  _ADC0GTL                           kpdlcdtestPCA
+     000000C4  _BUS_STOP                          kpdlcdtestPCA
+     000000C4  _STO                               kpdlcdtestPCA
+     000000C5  G$ADC0GTH$0$0                      kpdlcdtestPCA
+     000000C5  G$BUS_START$0$0                    kpdlcdtestPCA
+     000000C5  G$STA$0$0                          kpdlcdtestPCA
+     000000C5  _ADC0GTH                           kpdlcdtestPCA
+     000000C5  _BUS_START                         kpdlcdtestPCA
+     000000C5  _STA                               kpdlcdtestPCA
+     000000C6  G$ADC0LTL$0$0                      kpdlcdtestPCA
+     000000C6  G$BUS_EN$0$0                       kpdlcdtestPCA
+     000000C6  G$ENSMB$0$0                        kpdlcdtestPCA
+     000000C6  _ADC0LTL                           kpdlcdtestPCA
+     000000C6  _BUS_EN                            kpdlcdtestPCA
+     000000C6  _ENSMB                             kpdlcdtestPCA
+     000000C7  G$ADC0LTH$0$0                      kpdlcdtestPCA
+     000000C7  G$BUSY$0$0                         kpdlcdtestPCA
+     000000C7  G$BUS_BUSY$0$0                     kpdlcdtestPCA
+     000000C7  _ADC0LTH                           kpdlcdtestPCA
+     000000C7  _BUSY                              kpdlcdtestPCA
+     000000C7  _BUS_BUSY                          kpdlcdtestPCA
+     000000C8  G$CPRL2$0$0                        kpdlcdtestPCA
+     000000C8  G$T2CON$0$0                        kpdlcdtestPCA
+     000000C8  _CPRL2                             kpdlcdtestPCA
+     000000C8  _T2CON                             kpdlcdtestPCA
+     000000C9  G$CT2$0$0                          kpdlcdtestPCA
+     000000C9  G$T4CON$0$0                        kpdlcdtestPCA
+     000000C9  _CT2                               kpdlcdtestPCA
+     000000C9  _T4CON                             kpdlcdtestPCA
+     000000CA  G$RCAP2L$0$0                       kpdlcdtestPCA
+     000000CA  G$TR2$0$0                          kpdlcdtestPCA
+     000000CA  _RCAP2L                            kpdlcdtestPCA
+     000000CA  _TR2                               kpdlcdtestPCA
+     000000CB  G$EXEN2$0$0                        kpdlcdtestPCA
+     000000CB  G$RCAP2H$0$0                       kpdlcdtestPCA
+     000000CB  _EXEN2                             kpdlcdtestPCA
+     000000CB  _RCAP2H                            kpdlcdtestPCA
+     000000CC  G$TCLK$0$0                         kpdlcdtestPCA
+     000000CC  G$TL2$0$0                          kpdlcdtestPCA
+     000000CC  _TCLK                              kpdlcdtestPCA
+     000000CC  _TL2                               kpdlcdtestPCA
+     000000CD  G$RCLK$0$0                         kpdlcdtestPCA
+     000000CD  G$TH2$0$0                          kpdlcdtestPCA
+     000000CD  _RCLK                              kpdlcdtestPCA
+     000000CD  _TH2                               kpdlcdtestPCA
+     000000CE  G$EXF2$0$0                         kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000CE  _EXF2                              kpdlcdtestPCA
+     000000CF  G$SMB0CR$0$0                       kpdlcdtestPCA
+     000000CF  G$TF2$0$0                          kpdlcdtestPCA
+     000000CF  _SMB0CR                            kpdlcdtestPCA
+     000000CF  _TF2                               kpdlcdtestPCA
+     000000D0  G$P$0$0                            kpdlcdtestPCA
+     000000D0  G$PSW$0$0                          kpdlcdtestPCA
+     000000D0  _P                                 kpdlcdtestPCA
+     000000D0  _PSW                               kpdlcdtestPCA
+     000000D1  G$F1$0$0                           kpdlcdtestPCA
+     000000D1  G$REF0CN$0$0                       kpdlcdtestPCA
+     000000D1  _F1                                kpdlcdtestPCA
+     000000D1  _REF0CN                            kpdlcdtestPCA
+     000000D2  G$DAC0L$0$0                        kpdlcdtestPCA
+     000000D2  G$OV$0$0                           kpdlcdtestPCA
+     000000D2  _DAC0L                             kpdlcdtestPCA
+     000000D2  _OV                                kpdlcdtestPCA
+     000000D3  G$DAC0H$0$0                        kpdlcdtestPCA
+     000000D3  G$RS0$0$0                          kpdlcdtestPCA
+     000000D3  _DAC0H                             kpdlcdtestPCA
+     000000D3  _RS0                               kpdlcdtestPCA
+     000000D4  G$DAC0CN$0$0                       kpdlcdtestPCA
+     000000D4  G$RS1$0$0                          kpdlcdtestPCA
+     000000D4  _DAC0CN                            kpdlcdtestPCA
+     000000D4  _RS1                               kpdlcdtestPCA
+     000000D5  G$DAC1L$0$0                        kpdlcdtestPCA
+     000000D5  G$F0$0$0                           kpdlcdtestPCA
+     000000D5  _DAC1L                             kpdlcdtestPCA
+     000000D5  _F0                                kpdlcdtestPCA
+     000000D6  G$AC$0$0                           kpdlcdtestPCA
+     000000D6  G$DAC1H$0$0                        kpdlcdtestPCA
+     000000D6  _AC                                kpdlcdtestPCA
+     000000D6  _DAC1H                             kpdlcdtestPCA
+     000000D7  G$CY$0$0                           kpdlcdtestPCA
+     000000D7  G$DAC1CN$0$0                       kpdlcdtestPCA
+     000000D7  _CY                                kpdlcdtestPCA
+     000000D7  _DAC1CN                            kpdlcdtestPCA
+     000000D8  G$CCF0$0$0                         kpdlcdtestPCA
+     000000D8  G$PCA0CN$0$0                       kpdlcdtestPCA
+     000000D8  _CCF0                              kpdlcdtestPCA
+     000000D8  _PCA0CN                            kpdlcdtestPCA
+     000000D9  G$CCF1$0$0                         kpdlcdtestPCA
+     000000D9  G$PCA0MD$0$0                       kpdlcdtestPCA
+     000000D9  _CCF1                              kpdlcdtestPCA
+     000000D9  _PCA0MD                            kpdlcdtestPCA
+     000000DA  G$CCF2$0$0                         kpdlcdtestPCA
+     000000DA  G$PCA0CPM0$0$0                     kpdlcdtestPCA
+     000000DA  _CCF2                              kpdlcdtestPCA
+     000000DA  _PCA0CPM0                          kpdlcdtestPCA
+     000000DB  G$CCF3$0$0                         kpdlcdtestPCA
+     000000DB  G$PCA0CPM1$0$0                     kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000DB  _CCF3                              kpdlcdtestPCA
+     000000DB  _PCA0CPM1                          kpdlcdtestPCA
+     000000DC  G$CCF4$0$0                         kpdlcdtestPCA
+     000000DC  G$PCA0CPM2$0$0                     kpdlcdtestPCA
+     000000DC  _CCF4                              kpdlcdtestPCA
+     000000DC  _PCA0CPM2                          kpdlcdtestPCA
+     000000DD  G$PCA0CPM3$0$0                     kpdlcdtestPCA
+     000000DD  _PCA0CPM3                          kpdlcdtestPCA
+     000000DE  G$CR$0$0                           kpdlcdtestPCA
+     000000DE  G$PCA0CPM4$0$0                     kpdlcdtestPCA
+     000000DE  _CR                                kpdlcdtestPCA
+     000000DE  _PCA0CPM4                          kpdlcdtestPCA
+     000000DF  G$CF$0$0                           kpdlcdtestPCA
+     000000DF  _CF                                kpdlcdtestPCA
+     000000E0  G$ACC$0$0                          kpdlcdtestPCA
+     000000E0  _ACC                               kpdlcdtestPCA
+     000000E1  G$XBR0$0$0                         kpdlcdtestPCA
+     000000E1  _XBR0                              kpdlcdtestPCA
+     000000E2  G$XBR1$0$0                         kpdlcdtestPCA
+     000000E2  _XBR1                              kpdlcdtestPCA
+     000000E3  G$XBR2$0$0                         kpdlcdtestPCA
+     000000E3  _XBR2                              kpdlcdtestPCA
+     000000E4  G$RCAP4L$0$0                       kpdlcdtestPCA
+     000000E4  _RCAP4L                            kpdlcdtestPCA
+     000000E5  G$RCAP4H$0$0                       kpdlcdtestPCA
+     000000E5  _RCAP4H                            kpdlcdtestPCA
+     000000E6  G$EIE1$0$0                         kpdlcdtestPCA
+     000000E6  _EIE1                              kpdlcdtestPCA
+     000000E7  G$EIE2$0$0                         kpdlcdtestPCA
+     000000E7  _EIE2                              kpdlcdtestPCA
+     000000E8  G$AD0LJST$0$0                      kpdlcdtestPCA
+     000000E8  G$ADC0CN$0$0                       kpdlcdtestPCA
+     000000E8  G$ADLJST$0$0                       kpdlcdtestPCA
+     000000E8  _AD0LJST                           kpdlcdtestPCA
+     000000E8  _ADC0CN                            kpdlcdtestPCA
+     000000E8  _ADLJST                            kpdlcdtestPCA
+     000000E9  G$AD0WINT$0$0                      kpdlcdtestPCA
+     000000E9  G$ADWINT$0$0                       kpdlcdtestPCA
+     000000E9  G$PCA0L$0$0                        kpdlcdtestPCA
+     000000E9  _AD0WINT                           kpdlcdtestPCA
+     000000E9  _ADWINT                            kpdlcdtestPCA
+     000000E9  _PCA0L                             kpdlcdtestPCA
+     000000EA  G$AD0CM0$0$0                       kpdlcdtestPCA
+     000000EA  G$ADSTM0$0$0                       kpdlcdtestPCA
+     000000EA  G$PCA0CPL0$0$0                     kpdlcdtestPCA
+     000000EA  _AD0CM0                            kpdlcdtestPCA
+     000000EA  _ADSTM0                            kpdlcdtestPCA
+     000000EA  _PCA0CPL0                          kpdlcdtestPCA
+     000000EB  G$AD0CM1$0$0                       kpdlcdtestPCA
+     000000EB  G$ADSTM1$0$0                       kpdlcdtestPCA
+     000000EB  G$PCA0CPL1$0$0                     kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000EB  _AD0CM1                            kpdlcdtestPCA
+     000000EB  _ADSTM1                            kpdlcdtestPCA
+     000000EB  _PCA0CPL1                          kpdlcdtestPCA
+     000000EC  G$AD0BUSY$0$0                      kpdlcdtestPCA
+     000000EC  G$ADBUSY$0$0                       kpdlcdtestPCA
+     000000EC  G$PCA0CPL2$0$0                     kpdlcdtestPCA
+     000000EC  _AD0BUSY                           kpdlcdtestPCA
+     000000EC  _ADBUSY                            kpdlcdtestPCA
+     000000EC  _PCA0CPL2                          kpdlcdtestPCA
+     000000ED  G$AD0INT$0$0                       kpdlcdtestPCA
+     000000ED  G$ADCINT$0$0                       kpdlcdtestPCA
+     000000ED  G$PCA0CPL3$0$0                     kpdlcdtestPCA
+     000000ED  _AD0INT                            kpdlcdtestPCA
+     000000ED  _ADCINT                            kpdlcdtestPCA
+     000000ED  _PCA0CPL3                          kpdlcdtestPCA
+     000000EE  G$AD0TM$0$0                        kpdlcdtestPCA
+     000000EE  G$ADCTM$0$0                        kpdlcdtestPCA
+     000000EE  G$PCA0CPL4$0$0                     kpdlcdtestPCA
+     000000EE  _AD0TM                             kpdlcdtestPCA
+     000000EE  _ADCTM                             kpdlcdtestPCA
+     000000EE  _PCA0CPL4                          kpdlcdtestPCA
+     000000EF  G$AD0EN$0$0                        kpdlcdtestPCA
+     000000EF  G$ADCEN$0$0                        kpdlcdtestPCA
+     000000EF  G$RSTSRC$0$0                       kpdlcdtestPCA
+     000000EF  _AD0EN                             kpdlcdtestPCA
+     000000EF  _ADCEN                             kpdlcdtestPCA
+     000000EF  _RSTSRC                            kpdlcdtestPCA
+     000000F0  G$B$0$0                            kpdlcdtestPCA
+     000000F0  _B                                 kpdlcdtestPCA
+     000000F1  G$SCON1$0$0                        kpdlcdtestPCA
+     000000F1  _SCON1                             kpdlcdtestPCA
+     000000F2  G$SBUF1$0$0                        kpdlcdtestPCA
+     000000F2  _SBUF1                             kpdlcdtestPCA
+     000000F3  G$SADDR1$0$0                       kpdlcdtestPCA
+     000000F3  _SADDR1                            kpdlcdtestPCA
+     000000F4  G$TL4$0$0                          kpdlcdtestPCA
+     000000F4  _TL4                               kpdlcdtestPCA
+     000000F5  G$TH4$0$0                          kpdlcdtestPCA
+     000000F5  _B_5                               _gptrget
+     000000F5  _TH4                               kpdlcdtestPCA
+     000000F6  G$EIP1$0$0                         kpdlcdtestPCA
+     000000F6  _B_6                               _gptrget
+     000000F6  _EIP1                              kpdlcdtestPCA
+     000000F7  G$EIP2$0$0                         kpdlcdtestPCA
+     000000F7  _B_7                               _gptrget
+     000000F7  _EIP2                              kpdlcdtestPCA
+     000000F8  G$SPI0CN$0$0                       kpdlcdtestPCA
+     000000F8  G$SPIEN$0$0                        kpdlcdtestPCA
+     000000F8  _SPI0CN                            kpdlcdtestPCA
+     000000F8  _SPIEN                             kpdlcdtestPCA
+     000000F9  G$MSTEN$0$0                        kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000F9  G$PCA0H$0$0                        kpdlcdtestPCA
+     000000F9  _MSTEN                             kpdlcdtestPCA
+     000000F9  _PCA0H                             kpdlcdtestPCA
+     000000FA  G$PCA0CPH0$0$0                     kpdlcdtestPCA
+     000000FA  G$SLVSEL$0$0                       kpdlcdtestPCA
+     000000FA  _PCA0CPH0                          kpdlcdtestPCA
+     000000FA  _SLVSEL                            kpdlcdtestPCA
+     000000FB  G$PCA0CPH1$0$0                     kpdlcdtestPCA
+     000000FB  G$TXBSY$0$0                        kpdlcdtestPCA
+     000000FB  _PCA0CPH1                          kpdlcdtestPCA
+     000000FB  _TXBSY                             kpdlcdtestPCA
+     000000FC  G$PCA0CPH2$0$0                     kpdlcdtestPCA
+     000000FC  G$RXOVRN$0$0                       kpdlcdtestPCA
+     000000FC  _PCA0CPH2                          kpdlcdtestPCA
+     000000FC  _RXOVRN                            kpdlcdtestPCA
+     000000FD  G$MODF$0$0                         kpdlcdtestPCA
+     000000FD  G$PCA0CPH3$0$0                     kpdlcdtestPCA
+     000000FD  _MODF                              kpdlcdtestPCA
+     000000FD  _PCA0CPH3                          kpdlcdtestPCA
+     000000FE  G$PCA0CPH4$0$0                     kpdlcdtestPCA
+     000000FE  G$WCOL$0$0                         kpdlcdtestPCA
+     000000FE  _PCA0CPH4                          kpdlcdtestPCA
+     000000FE  _WCOL                              kpdlcdtestPCA
+     000000FF  G$SPIF$0$0                         kpdlcdtestPCA
+     000000FF  G$WDTCN$0$0                        kpdlcdtestPCA
+     000000FF  _SPIF                              kpdlcdtestPCA
+     000000FF  _WDTCN                             kpdlcdtestPCA
+     00008C8A  G$TMR0$0$0                         kpdlcdtestPCA
+     00008C8A  _TMR0                              kpdlcdtestPCA
+     00008D8B  G$TMR1$0$0                         kpdlcdtestPCA
+     00008D8B  _TMR1                              kpdlcdtestPCA
+     00009392  G$TMR3RL$0$0                       kpdlcdtestPCA
+     00009392  _TMR3RL                            kpdlcdtestPCA
+     00009594  G$TMR3$0$0                         kpdlcdtestPCA
+     00009594  _TMR3                              kpdlcdtestPCA
+     0000BFBE  G$ADC0$0$0                         kpdlcdtestPCA
+     0000BFBE  _ADC0                              kpdlcdtestPCA
+     0000C5C4  G$ADC0GT$0$0                       kpdlcdtestPCA
+     0000C5C4  _ADC0GT                            kpdlcdtestPCA
+     0000C7C6  G$ADC0LT$0$0                       kpdlcdtestPCA
+     0000C7C6  _ADC0LT                            kpdlcdtestPCA
+     0000CBCA  G$RCAP2$0$0                        kpdlcdtestPCA
+     0000CBCA  _RCAP2                             kpdlcdtestPCA
+     0000CDCC  G$TMR2$0$0                         kpdlcdtestPCA
+     0000CDCC  _TMR2                              kpdlcdtestPCA
+     0000D3D2  G$DAC0$0$0                         kpdlcdtestPCA
+     0000D3D2  _DAC0                              kpdlcdtestPCA
+     0000D6D5  G$DAC1$0$0                         kpdlcdtestPCA
+     0000D6D5  _DAC1                              kpdlcdtestPCA
+     0000E5E4  G$RCAP4$0$0                        kpdlcdtestPCA
+     0000E5E4  _RCAP4                             kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000F5F4  G$TMR4$0$0                         kpdlcdtestPCA
+     0000F5F4  _TMR4                              kpdlcdtestPCA
+     0000F9E9  G$PCA0$0$0                         kpdlcdtestPCA
+     0000F9E9  _PCA0                              kpdlcdtestPCA
+     0000FAEA  G$PCA0CP0$0$0                      kpdlcdtestPCA
+     0000FAEA  _PCA0CP0                           kpdlcdtestPCA
+     0000FBEB  G$PCA0CP1$0$0                      kpdlcdtestPCA
+     0000FBEB  _PCA0CP1                           kpdlcdtestPCA
+     0000FCEC  G$PCA0CP2$0$0                      kpdlcdtestPCA
+     0000FCEC  _PCA0CP2                           kpdlcdtestPCA
+     0000FDED  G$PCA0CP3$0$0                      kpdlcdtestPCA
+     0000FDED  _PCA0CP3                           kpdlcdtestPCA
+     0000FEEE  G$PCA0CP4$0$0                      kpdlcdtestPCA
+     0000FEEE  _PCA0CP4                           kpdlcdtestPCA
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+BSEG_BYTES                          00000020    00000002 =           2. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+REG_BANK_0                          00000000    00000008 =           8. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 17.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DSEG                                00000000    00000080 =         128. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000008  G$Data2$0$0                        kpdlcdtestPCA
+     00000008  _Data2                             kpdlcdtestPCA
+     0000000B  LkpdlcdtestPCA.lcd_clear$NumByte   kpdlcdtestPCA
+     0000000C  LkpdlcdtestPCA.lcd_clear$Cmd$1$8   kpdlcdtestPCA
+     0000000E  LkpdlcdtestPCA.read_keypad$Data$   kpdlcdtestPCA
+     00000010  LkpdlcdtestPCA.i2c_write_data$st   kpdlcdtestPCA
+     00000010  _i2c_write_data_PARM_2             kpdlcdtestPCA
+     00000011  LkpdlcdtestPCA.i2c_write_data$bu   kpdlcdtestPCA
+     00000011  _i2c_write_data_PARM_3             kpdlcdtestPCA
+     00000014  LkpdlcdtestPCA.i2c_write_data$nu   kpdlcdtestPCA
+     00000014  _i2c_write_data_PARM_4             kpdlcdtestPCA
+     00000015  LkpdlcdtestPCA.i2c_read_data$sta   kpdlcdtestPCA
+     00000015  _i2c_read_data_PARM_2              kpdlcdtestPCA
+     00000016  LkpdlcdtestPCA.i2c_read_data$buf   kpdlcdtestPCA
+     00000016  _i2c_read_data_PARM_3              kpdlcdtestPCA
+     00000019  LkpdlcdtestPCA.i2c_read_data$num   kpdlcdtestPCA
+     00000019  _i2c_read_data_PARM_4              kpdlcdtestPCA
+     0000001A  G$Counts$0$0                       kpdlcdtestPCA
+     0000001A  _Counts                            kpdlcdtestPCA
+     0000001C  G$nCounts$0$0                      kpdlcdtestPCA
+     0000001C  _nCounts                           kpdlcdtestPCA
+     0000001E  G$nOverflows$0$0                   kpdlcdtestPCA
+     0000001E  _nOverflows                        kpdlcdtestPCA
+     00000022  _vsprintf_PARM_2                   sprintf
+     00000025  _vsprintf_PARM_3                   sprintf
+     00000029  _bp                                _bp
+     0000002A  _vprintf_PARM_2                    vprintf
+     00000037  __print_format_PARM_2              printf_large
+     0000003A  __print_format_PARM_3              printf_large
+     0000003D  __print_format_PARM_4              printf_large
+ASxxxx Linker V03.00 + NoICE + sdld,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+OSEG                                00000045    00000006 =           6. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000045  LkpdlcdtestPCA.aligned_alloc$siz   kpdlcdtestPCA
+     00000045  __gptrput_PARM_2                   _gptrput
+     00000045  __mulint_PARM_2                    _mulint
+     00000045  _aligned_alloc_PARM_2              kpdlcdtestPCA
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+ISEG                                0000004B    00000006 =           6. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                00000051    000000AF =         175. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000051  __start__stack                     kpdlcdtestPCA
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 21.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+XSEG                                00000001    00000050 =          80. bytes (REL,CON,XDATA)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+D:   00000001  LkpdlcdtestPCA.lcd_print$text$1$   kpdlcdtestPCA
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 22.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00000000    00000051 =          81. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000000  A$kpdlcdtestPCA$1033               kpdlcdtestPCA
+C:   00000003  A$kpdlcdtestPCA$1034               kpdlcdtestPCA
+C:   0000000B  A$kpdlcdtestPCA$1036               kpdlcdtestPCA
+C:   00000013  A$kpdlcdtestPCA$1038               kpdlcdtestPCA
+C:   0000001B  A$kpdlcdtestPCA$1040               kpdlcdtestPCA
+C:   00000023  A$kpdlcdtestPCA$1042               kpdlcdtestPCA
+C:   0000002B  A$kpdlcdtestPCA$1044               kpdlcdtestPCA
+C:   00000033  A$kpdlcdtestPCA$1046               kpdlcdtestPCA
+C:   0000003B  A$kpdlcdtestPCA$1048               kpdlcdtestPCA
+C:   00000043  A$kpdlcdtestPCA$1050               kpdlcdtestPCA
+C:   0000004B  A$kpdlcdtestPCA$1052               kpdlcdtestPCA
+C:   0000004E  A$kpdlcdtestPCA$1074               kpdlcdtestPCA
+C:   0000004E  __sdcc_program_startup             kpdlcdtestPCA
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 23.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT0                             00000051    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000051  __sdcc_gsinit_startup              
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 24.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT2                             00000054    0000000A =          10. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 25.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT3                             0000005E    00000022 =          34. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000005E  __mcs51_genXINIT                   
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 26.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT4                             00000080    0000002A =          42. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000080  __mcs51_genRAMCLEAR                
+C:   00000086  __mcs51_genXRAMCLEAR               
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 27.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             000000AA    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000000AA  A$kpdlcdtestPCA$1067               kpdlcdtestPCA
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 28.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000000AD  A$kpdlcdtestPCA$1102               kpdlcdtestPCA
+C:   000000AD  C$c8051_SDCC.h$42$0$0              kpdlcdtestPCA
+C:   000000AD  C$c8051_SDCC.h$46$1$35             kpdlcdtestPCA
+C:   000000AD  G$SYSCLK_Init$0$0                  kpdlcdtestPCA
+C:   000000AD  _SYSCLK_Init                       kpdlcdtestPCA
+C:   000000B0  A$kpdlcdtestPCA$1105               kpdlcdtestPCA
+C:   000000B0  C$c8051_SDCC.h$49$1$35             kpdlcdtestPCA
+C:   000000B2  A$kpdlcdtestPCA$1106               kpdlcdtestPCA
+C:   000000B4  A$kpdlcdtestPCA$1108               kpdlcdtestPCA
+C:   000000B5  A$kpdlcdtestPCA$1109               kpdlcdtestPCA
+C:   000000B7  A$kpdlcdtestPCA$1110               kpdlcdtestPCA
+C:   000000B8  A$kpdlcdtestPCA$1111               kpdlcdtestPCA
+C:   000000B9  A$kpdlcdtestPCA$1112               kpdlcdtestPCA
+C:   000000BB  A$kpdlcdtestPCA$1113               kpdlcdtestPCA
+C:   000000BC  A$kpdlcdtestPCA$1114               kpdlcdtestPCA
+C:   000000BE  A$kpdlcdtestPCA$1115               kpdlcdtestPCA
+C:   000000C0  A$kpdlcdtestPCA$1116               kpdlcdtestPCA
+C:   000000C1  A$kpdlcdtestPCA$1117               kpdlcdtestPCA
+C:   000000C2  A$kpdlcdtestPCA$1118               kpdlcdtestPCA
+C:   000000C4  A$kpdlcdtestPCA$1122               kpdlcdtestPCA
+C:   000000C4  C$c8051_SDCC.h$51$1$35             kpdlcdtestPCA
+C:   000000C6  A$kpdlcdtestPCA$1123               kpdlcdtestPCA
+C:   000000C9  A$kpdlcdtestPCA$1126               kpdlcdtestPCA
+C:   000000C9  C$c8051_SDCC.h$53$1$35             kpdlcdtestPCA
+C:   000000CC  A$kpdlcdtestPCA$1129               kpdlcdtestPCA
+C:   000000CC  C$c8051_SDCC.h$56$1$35             kpdlcdtestPCA
+C:   000000CC  XG$SYSCLK_Init$0$0                 kpdlcdtestPCA
+C:   000000CD  A$kpdlcdtestPCA$1142               kpdlcdtestPCA
+C:   000000CD  C$c8051_SDCC.h$64$1$35             kpdlcdtestPCA
+C:   000000CD  C$c8051_SDCC.h$66$1$37             kpdlcdtestPCA
+C:   000000CD  G$UART0_Init$0$0                   kpdlcdtestPCA
+C:   000000CD  _UART0_Init                        kpdlcdtestPCA
+C:   000000D0  A$kpdlcdtestPCA$1145               kpdlcdtestPCA
+C:   000000D0  C$c8051_SDCC.h$67$1$37             kpdlcdtestPCA
+C:   000000D3  A$kpdlcdtestPCA$1148               kpdlcdtestPCA
+C:   000000D3  C$c8051_SDCC.h$68$1$37             kpdlcdtestPCA
+C:   000000D6  A$kpdlcdtestPCA$1151               kpdlcdtestPCA
+C:   000000D6  C$c8051_SDCC.h$69$1$37             kpdlcdtestPCA
+C:   000000D8  A$kpdlcdtestPCA$1154               kpdlcdtestPCA
+C:   000000D8  C$c8051_SDCC.h$70$1$37             kpdlcdtestPCA
+C:   000000DB  A$kpdlcdtestPCA$1157               kpdlcdtestPCA
+C:   000000DB  C$c8051_SDCC.h$71$1$37             kpdlcdtestPCA
+C:   000000DE  A$kpdlcdtestPCA$1160               kpdlcdtestPCA
+C:   000000DE  C$c8051_SDCC.h$73$1$37             kpdlcdtestPCA
+C:   000000E0  A$kpdlcdtestPCA$1163               kpdlcdtestPCA
+C:   000000E0  C$c8051_SDCC.h$74$1$37             kpdlcdtestPCA
+C:   000000E3  A$kpdlcdtestPCA$1166               kpdlcdtestPCA
+C:   000000E3  C$c8051_SDCC.h$75$1$37             kpdlcdtestPCA
+C:   000000E3  XG$UART0_Init$0$0                  kpdlcdtestPCA
+C:   000000E4  A$kpdlcdtestPCA$1179               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 29.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000000E4  C$c8051_SDCC.h$83$1$37             kpdlcdtestPCA
+C:   000000E4  C$c8051_SDCC.h$85$1$39             kpdlcdtestPCA
+C:   000000E4  G$Sys_Init$0$0                     kpdlcdtestPCA
+C:   000000E4  _Sys_Init                          kpdlcdtestPCA
+C:   000000E7  A$kpdlcdtestPCA$1182               kpdlcdtestPCA
+C:   000000E7  C$c8051_SDCC.h$86$1$39             kpdlcdtestPCA
+C:   000000EA  A$kpdlcdtestPCA$1185               kpdlcdtestPCA
+C:   000000EA  C$c8051_SDCC.h$88$1$39             kpdlcdtestPCA
+C:   000000ED  A$kpdlcdtestPCA$1188               kpdlcdtestPCA
+C:   000000ED  C$c8051_SDCC.h$89$1$39             kpdlcdtestPCA
+C:   000000F0  A$kpdlcdtestPCA$1191               kpdlcdtestPCA
+C:   000000F0  C$c8051_SDCC.h$91$1$39             kpdlcdtestPCA
+C:   000000F3  A$kpdlcdtestPCA$1194               kpdlcdtestPCA
+C:   000000F3  C$c8051_SDCC.h$92$1$39             kpdlcdtestPCA
+C:   000000F6  A$kpdlcdtestPCA$1197               kpdlcdtestPCA
+C:   000000F6  C$c8051_SDCC.h$93$1$39             kpdlcdtestPCA
+C:   000000F6  XG$Sys_Init$0$0                    kpdlcdtestPCA
+C:   000000F7  A$kpdlcdtestPCA$1210               kpdlcdtestPCA
+C:   000000F7  C$c8051_SDCC.h$98$1$39             kpdlcdtestPCA
+C:   000000F7  G$putchar$0$0                      kpdlcdtestPCA
+C:   000000F7  _putchar                           kpdlcdtestPCA
+C:   000000F9  A$kpdlcdtestPCA$1216               kpdlcdtestPCA
+C:   000000F9  C$c8051_SDCC.h$100$1$41            kpdlcdtestPCA
+C:   000000F9  C$c8051_SDCC.h$101$1$41            kpdlcdtestPCA
+C:   000000FC  A$kpdlcdtestPCA$1217               kpdlcdtestPCA
+C:   000000FE  A$kpdlcdtestPCA$1221               kpdlcdtestPCA
+C:   000000FE  C$c8051_SDCC.h$102$1$41            kpdlcdtestPCA
+C:   00000100  A$kpdlcdtestPCA$1224               kpdlcdtestPCA
+C:   00000100  C$c8051_SDCC.h$103$1$41            kpdlcdtestPCA
+C:   00000100  XG$putchar$0$0                     kpdlcdtestPCA
+C:   00000101  A$kpdlcdtestPCA$1242               kpdlcdtestPCA
+C:   00000101  C$c8051_SDCC.h$108$1$41            kpdlcdtestPCA
+C:   00000101  C$c8051_SDCC.h$111$1$43            kpdlcdtestPCA
+C:   00000101  C$c8051_SDCC.h$112$1$43            kpdlcdtestPCA
+C:   00000101  G$getchar$0$0                      kpdlcdtestPCA
+C:   00000101  _getchar                           kpdlcdtestPCA
+C:   00000104  A$kpdlcdtestPCA$1243               kpdlcdtestPCA
+C:   00000106  A$kpdlcdtestPCA$1247               kpdlcdtestPCA
+C:   00000106  C$c8051_SDCC.h$113$1$43            kpdlcdtestPCA
+C:   00000109  A$kpdlcdtestPCA$1250               kpdlcdtestPCA
+C:   00000109  C$c8051_SDCC.h$114$1$43            kpdlcdtestPCA
+C:   0000010C  A$kpdlcdtestPCA$1253               kpdlcdtestPCA
+C:   0000010C  C$c8051_SDCC.h$115$1$43            kpdlcdtestPCA
+C:   0000010F  A$kpdlcdtestPCA$1256               kpdlcdtestPCA
+C:   0000010F  C$c8051_SDCC.h$116$1$43            kpdlcdtestPCA
+C:   0000010F  XG$getchar$0$0                     kpdlcdtestPCA
+C:   00000110  A$kpdlcdtestPCA$1271               kpdlcdtestPCA
+C:   00000110  C$c8051_SDCC.h$121$1$43            kpdlcdtestPCA
+C:   00000110  C$c8051_SDCC.h$124$1$45            kpdlcdtestPCA
+C:   00000110  G$getchar_nw$0$0                   kpdlcdtestPCA
+C:   00000110  _getchar_nw                        kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 30.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000113  A$kpdlcdtestPCA$1272               kpdlcdtestPCA
+C:   00000116  A$kpdlcdtestPCA$1273               kpdlcdtestPCA
+C:   00000118  A$kpdlcdtestPCA$1277               kpdlcdtestPCA
+C:   00000118  C$c8051_SDCC.h$127$2$46            kpdlcdtestPCA
+C:   0000011A  A$kpdlcdtestPCA$1280               kpdlcdtestPCA
+C:   0000011A  C$c8051_SDCC.h$128$2$46            kpdlcdtestPCA
+C:   0000011D  A$kpdlcdtestPCA$1283               kpdlcdtestPCA
+C:   0000011D  C$c8051_SDCC.h$129$2$46            kpdlcdtestPCA
+C:   00000120  A$kpdlcdtestPCA$1286               kpdlcdtestPCA
+C:   00000120  C$c8051_SDCC.h$130$2$46            kpdlcdtestPCA
+C:   00000123  A$kpdlcdtestPCA$1290               kpdlcdtestPCA
+C:   00000123  C$c8051_SDCC.h$132$1$45            kpdlcdtestPCA
+C:   00000123  XG$getchar_nw$0$0                  kpdlcdtestPCA
+C:   00000124  A$kpdlcdtestPCA$1307               kpdlcdtestPCA
+C:   00000124  C$i2c.h$84$1$45                    kpdlcdtestPCA
+C:   00000124  G$lcd_print$0$0                    kpdlcdtestPCA
+C:   00000124  _lcd_print                         kpdlcdtestPCA
+C:   00000126  A$kpdlcdtestPCA$1308               kpdlcdtestPCA
+C:   00000129  A$kpdlcdtestPCA$1311               kpdlcdtestPCA
+C:   00000129  C$i2c.h$90$1$81                    kpdlcdtestPCA
+C:   0000012B  A$kpdlcdtestPCA$1312               kpdlcdtestPCA
+C:   0000012D  A$kpdlcdtestPCA$1313               kpdlcdtestPCA
+C:   0000012E  A$kpdlcdtestPCA$1314               kpdlcdtestPCA
+C:   00000130  A$kpdlcdtestPCA$1315               kpdlcdtestPCA
+C:   00000131  A$kpdlcdtestPCA$1316               kpdlcdtestPCA
+C:   00000133  A$kpdlcdtestPCA$1317               kpdlcdtestPCA
+C:   00000134  A$kpdlcdtestPCA$1318               kpdlcdtestPCA
+C:   00000136  A$kpdlcdtestPCA$1319               kpdlcdtestPCA
+C:   00000139  A$kpdlcdtestPCA$1320               kpdlcdtestPCA
+C:   0000013B  A$kpdlcdtestPCA$1321               kpdlcdtestPCA
+C:   0000013E  A$kpdlcdtestPCA$1322               kpdlcdtestPCA
+C:   00000140  A$kpdlcdtestPCA$1323               kpdlcdtestPCA
+C:   00000142  A$kpdlcdtestPCA$1324               kpdlcdtestPCA
+C:   00000144  A$kpdlcdtestPCA$1328               kpdlcdtestPCA
+C:   00000144  C$i2c.h$92$2$82                    kpdlcdtestPCA
+C:   00000146  A$kpdlcdtestPCA$1329               kpdlcdtestPCA
+C:   00000148  A$kpdlcdtestPCA$1330               kpdlcdtestPCA
+C:   00000149  A$kpdlcdtestPCA$1331               kpdlcdtestPCA
+C:   0000014B  A$kpdlcdtestPCA$1334               kpdlcdtestPCA
+C:   0000014B  C$i2c.h$93$1$81                    kpdlcdtestPCA
+C:   0000014D  A$kpdlcdtestPCA$1335               kpdlcdtestPCA
+C:   0000014F  A$kpdlcdtestPCA$1336               kpdlcdtestPCA
+C:   00000150  A$kpdlcdtestPCA$1337               kpdlcdtestPCA
+C:   00000152  A$kpdlcdtestPCA$1338               kpdlcdtestPCA
+C:   00000153  A$kpdlcdtestPCA$1339               kpdlcdtestPCA
+C:   00000155  A$kpdlcdtestPCA$1340               kpdlcdtestPCA
+C:   00000156  A$kpdlcdtestPCA$1341               kpdlcdtestPCA
+C:   00000158  A$kpdlcdtestPCA$1342               kpdlcdtestPCA
+C:   0000015B  A$kpdlcdtestPCA$1343               kpdlcdtestPCA
+C:   0000015E  A$kpdlcdtestPCA$1344               kpdlcdtestPCA
+C:   00000161  A$kpdlcdtestPCA$1347               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 31.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000161  C$i2c.h$96$1$81                    kpdlcdtestPCA
+C:   00000164  A$kpdlcdtestPCA$1348               kpdlcdtestPCA
+C:   00000167  A$kpdlcdtestPCA$1349               kpdlcdtestPCA
+C:   0000016A  A$kpdlcdtestPCA$1350               kpdlcdtestPCA
+C:   0000016C  A$kpdlcdtestPCA$1353               kpdlcdtestPCA
+C:   0000016E  A$kpdlcdtestPCA$1355               kpdlcdtestPCA
+C:   0000016F  A$kpdlcdtestPCA$1356               kpdlcdtestPCA
+C:   00000170  A$kpdlcdtestPCA$1357               kpdlcdtestPCA
+C:   00000171  A$kpdlcdtestPCA$1358               kpdlcdtestPCA
+C:   00000173  A$kpdlcdtestPCA$1361               kpdlcdtestPCA
+C:   00000173  C$i2c.h$99$2$84                    kpdlcdtestPCA
+C:   00000174  A$kpdlcdtestPCA$1362               kpdlcdtestPCA
+C:   00000176  A$kpdlcdtestPCA$1363               kpdlcdtestPCA
+C:   00000178  A$kpdlcdtestPCA$1364               kpdlcdtestPCA
+C:   00000179  A$kpdlcdtestPCA$1365               kpdlcdtestPCA
+C:   0000017B  A$kpdlcdtestPCA$1366               kpdlcdtestPCA
+C:   0000017D  A$kpdlcdtestPCA$1367               kpdlcdtestPCA
+C:   0000017E  A$kpdlcdtestPCA$1368               kpdlcdtestPCA
+C:   0000017F  A$kpdlcdtestPCA$1369               kpdlcdtestPCA
+C:   00000182  A$kpdlcdtestPCA$1370               kpdlcdtestPCA
+C:   00000183  A$kpdlcdtestPCA$1371               kpdlcdtestPCA
+C:   00000185  A$kpdlcdtestPCA$1372               kpdlcdtestPCA
+C:   00000187  A$kpdlcdtestPCA$1373               kpdlcdtestPCA
+C:   00000188  A$kpdlcdtestPCA$1374               kpdlcdtestPCA
+C:   0000018A  A$kpdlcdtestPCA$1375               kpdlcdtestPCA
+C:   0000018C  A$kpdlcdtestPCA$1376               kpdlcdtestPCA
+C:   0000018E  A$kpdlcdtestPCA$1377               kpdlcdtestPCA
+C:   0000018F  A$kpdlcdtestPCA$1381               kpdlcdtestPCA
+C:   0000018F  C$i2c.h$97$1$81                    kpdlcdtestPCA
+C:   00000190  A$kpdlcdtestPCA$1382               kpdlcdtestPCA
+C:   00000192  A$kpdlcdtestPCA$1386               kpdlcdtestPCA
+C:   00000192  C$i2c.h$102$1$81                   kpdlcdtestPCA
+C:   00000195  A$kpdlcdtestPCA$1387               kpdlcdtestPCA
+C:   00000198  A$kpdlcdtestPCA$1388               kpdlcdtestPCA
+C:   0000019B  A$kpdlcdtestPCA$1389               kpdlcdtestPCA
+C:   0000019E  A$kpdlcdtestPCA$1390               kpdlcdtestPCA
+C:   000001A0  A$kpdlcdtestPCA$1391               kpdlcdtestPCA
+C:   000001A3  A$kpdlcdtestPCA$1392               kpdlcdtestPCA
+C:   000001A6  A$kpdlcdtestPCA$1394               kpdlcdtestPCA
+C:   000001A8  A$kpdlcdtestPCA$1397               kpdlcdtestPCA
+C:   000001A8  C$i2c.h$103$1$81                   kpdlcdtestPCA
+C:   000001A8  XG$lcd_print$0$0                   kpdlcdtestPCA
+C:   000001A9  A$kpdlcdtestPCA$1413               kpdlcdtestPCA
+C:   000001A9  C$i2c.h$106$1$81                   kpdlcdtestPCA
+C:   000001A9  C$i2c.h$108$1$81                   kpdlcdtestPCA
+C:   000001A9  G$lcd_clear$0$0                    kpdlcdtestPCA
+C:   000001A9  _lcd_clear                         kpdlcdtestPCA
+C:   000001AC  A$kpdlcdtestPCA$1417               kpdlcdtestPCA
+C:   000001AC  C$i2c.h$110$1$85                   kpdlcdtestPCA
+C:   000001AE  A$kpdlcdtestPCA$1418               kpdlcdtestPCA
+C:   000001B0  A$kpdlcdtestPCA$1419               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 32.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000001B2  A$kpdlcdtestPCA$1420               kpdlcdtestPCA
+C:   000001B5  A$kpdlcdtestPCA$1421               kpdlcdtestPCA
+C:   000001B8  A$kpdlcdtestPCA$1422               kpdlcdtestPCA
+C:   000001BB  A$kpdlcdtestPCA$1423               kpdlcdtestPCA
+C:   000001BE  A$kpdlcdtestPCA$1424               kpdlcdtestPCA
+C:   000001C1  A$kpdlcdtestPCA$1425               kpdlcdtestPCA
+C:   000001C4  A$kpdlcdtestPCA$1426               kpdlcdtestPCA
+C:   000001C7  A$kpdlcdtestPCA$1427               kpdlcdtestPCA
+C:   000001C9  A$kpdlcdtestPCA$1431               kpdlcdtestPCA
+C:   000001C9  C$i2c.h$112$1$85                   kpdlcdtestPCA
+C:   000001CC  A$kpdlcdtestPCA$1434               kpdlcdtestPCA
+C:   000001CC  C$i2c.h$113$1$85                   kpdlcdtestPCA
+C:   000001CF  A$kpdlcdtestPCA$1435               kpdlcdtestPCA
+C:   000001D2  A$kpdlcdtestPCA$1436               kpdlcdtestPCA
+C:   000001D5  A$kpdlcdtestPCA$1437               kpdlcdtestPCA
+C:   000001D8  A$kpdlcdtestPCA$1438               kpdlcdtestPCA
+C:   000001DB  A$kpdlcdtestPCA$1439               kpdlcdtestPCA
+C:   000001DE  A$kpdlcdtestPCA$1440               kpdlcdtestPCA
+C:   000001E1  A$kpdlcdtestPCA$1443               kpdlcdtestPCA
+C:   000001E1  C$i2c.h$114$1$85                   kpdlcdtestPCA
+C:   000001E1  XG$lcd_clear$0$0                   kpdlcdtestPCA
+C:   000001E2  A$kpdlcdtestPCA$1459               kpdlcdtestPCA
+C:   000001E2  C$i2c.h$117$1$85                   kpdlcdtestPCA
+C:   000001E2  C$i2c.h$121$1$86                   kpdlcdtestPCA
+C:   000001E2  G$read_keypad$0$0                  kpdlcdtestPCA
+C:   000001E2  _read_keypad                       kpdlcdtestPCA
+C:   000001E5  A$kpdlcdtestPCA$1460               kpdlcdtestPCA
+C:   000001E8  A$kpdlcdtestPCA$1461               kpdlcdtestPCA
+C:   000001EB  A$kpdlcdtestPCA$1462               kpdlcdtestPCA
+C:   000001EE  A$kpdlcdtestPCA$1463               kpdlcdtestPCA
+C:   000001F1  A$kpdlcdtestPCA$1464               kpdlcdtestPCA
+C:   000001F4  A$kpdlcdtestPCA$1465               kpdlcdtestPCA
+C:   000001F7  A$kpdlcdtestPCA$1468               kpdlcdtestPCA
+C:   000001F7  C$i2c.h$122$1$86                   kpdlcdtestPCA
+C:   000001F9  A$kpdlcdtestPCA$1469               kpdlcdtestPCA
+C:   000001FC  A$kpdlcdtestPCA$1470               kpdlcdtestPCA
+C:   000001FF  A$kpdlcdtestPCA$1471               kpdlcdtestPCA
+C:   00000201  A$kpdlcdtestPCA$1475               kpdlcdtestPCA
+C:   00000203  A$kpdlcdtestPCA$1476               kpdlcdtestPCA
+C:   00000205  A$kpdlcdtestPCA$1480               kpdlcdtestPCA
+C:   00000205  C$i2c.h$126$2$87                   kpdlcdtestPCA
+C:   00000207  A$kpdlcdtestPCA$1481               kpdlcdtestPCA
+C:   00000209  A$kpdlcdtestPCA$1482               kpdlcdtestPCA
+C:   0000020B  A$kpdlcdtestPCA$1483               kpdlcdtestPCA
+C:   0000020D  A$kpdlcdtestPCA$1484               kpdlcdtestPCA
+C:   0000020F  A$kpdlcdtestPCA$1486               kpdlcdtestPCA
+C:   00000210  A$kpdlcdtestPCA$1487               kpdlcdtestPCA
+C:   00000211  A$kpdlcdtestPCA$1488               kpdlcdtestPCA
+C:   00000212  A$kpdlcdtestPCA$1489               kpdlcdtestPCA
+C:   00000213  A$kpdlcdtestPCA$1490               kpdlcdtestPCA
+C:   00000214  A$kpdlcdtestPCA$1491               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 33.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000215  A$kpdlcdtestPCA$1493               kpdlcdtestPCA
+C:   00000218  A$kpdlcdtestPCA$1494               kpdlcdtestPCA
+C:   0000021A  A$kpdlcdtestPCA$1495               kpdlcdtestPCA
+C:   0000021C  A$kpdlcdtestPCA$1496               kpdlcdtestPCA
+C:   0000021D  A$kpdlcdtestPCA$1497               kpdlcdtestPCA
+C:   0000021F  A$kpdlcdtestPCA$1498               kpdlcdtestPCA
+C:   00000220  A$kpdlcdtestPCA$1499               kpdlcdtestPCA
+C:   00000222  A$kpdlcdtestPCA$1500               kpdlcdtestPCA
+C:   00000223  A$kpdlcdtestPCA$1501               kpdlcdtestPCA
+C:   00000224  A$kpdlcdtestPCA$1502               kpdlcdtestPCA
+C:   00000226  A$kpdlcdtestPCA$1505               kpdlcdtestPCA
+C:   00000226  C$i2c.h$127$2$87                   kpdlcdtestPCA
+C:   00000228  A$kpdlcdtestPCA$1506               kpdlcdtestPCA
+C:   00000229  A$kpdlcdtestPCA$1507               kpdlcdtestPCA
+C:   0000022B  A$kpdlcdtestPCA$1508               kpdlcdtestPCA
+C:   0000022D  A$kpdlcdtestPCA$1512               kpdlcdtestPCA
+C:   0000022D  C$i2c.h$124$1$86                   kpdlcdtestPCA
+C:   0000022E  A$kpdlcdtestPCA$1513               kpdlcdtestPCA
+C:   00000230  A$kpdlcdtestPCA$1514               kpdlcdtestPCA
+C:   00000233  A$kpdlcdtestPCA$1516               kpdlcdtestPCA
+C:   00000235  A$kpdlcdtestPCA$1519               kpdlcdtestPCA
+C:   00000235  C$i2c.h$130$1$86                   kpdlcdtestPCA
+C:   00000237  A$kpdlcdtestPCA$1520               kpdlcdtestPCA
+C:   0000023A  A$kpdlcdtestPCA$1521               kpdlcdtestPCA
+C:   0000023D  A$kpdlcdtestPCA$1522               kpdlcdtestPCA
+C:   0000023F  A$kpdlcdtestPCA$1526               kpdlcdtestPCA
+C:   0000023F  C$i2c.h$132$1$86                   kpdlcdtestPCA
+C:   00000241  A$kpdlcdtestPCA$1527               kpdlcdtestPCA
+C:   00000244  A$kpdlcdtestPCA$1528               kpdlcdtestPCA
+C:   00000247  A$kpdlcdtestPCA$1529               kpdlcdtestPCA
+C:   00000249  A$kpdlcdtestPCA$1533               kpdlcdtestPCA
+C:   00000249  C$i2c.h$134$1$86                   kpdlcdtestPCA
+C:   0000024B  A$kpdlcdtestPCA$1534               kpdlcdtestPCA
+C:   0000024E  A$kpdlcdtestPCA$1535               kpdlcdtestPCA
+C:   00000251  A$kpdlcdtestPCA$1536               kpdlcdtestPCA
+C:   00000253  A$kpdlcdtestPCA$1540               kpdlcdtestPCA
+C:   00000253  C$i2c.h$136$1$86                   kpdlcdtestPCA
+C:   00000255  A$kpdlcdtestPCA$1541               kpdlcdtestPCA
+C:   00000258  A$kpdlcdtestPCA$1542               kpdlcdtestPCA
+C:   0000025B  A$kpdlcdtestPCA$1543               kpdlcdtestPCA
+C:   0000025D  A$kpdlcdtestPCA$1547               kpdlcdtestPCA
+C:   0000025D  C$i2c.h$138$1$86                   kpdlcdtestPCA
+C:   00000260  A$kpdlcdtestPCA$1551               kpdlcdtestPCA
+C:   00000260  C$i2c.h$139$1$86                   kpdlcdtestPCA
+C:   00000260  XG$read_keypad$0$0                 kpdlcdtestPCA
+C:   00000261  A$kpdlcdtestPCA$1567               kpdlcdtestPCA
+C:   00000261  C$i2c.h$151$1$86                   kpdlcdtestPCA
+C:   00000261  G$kpd_input$0$0                    kpdlcdtestPCA
+C:   00000261  _kpd_input                         kpdlcdtestPCA
+C:   00000263  A$kpdlcdtestPCA$1572               kpdlcdtestPCA
+C:   00000263  C$i2c.h$156$1$89                   kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 34.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000263  C$i2c.h$159$1$89                   kpdlcdtestPCA
+C:   00000264  A$kpdlcdtestPCA$1573               kpdlcdtestPCA
+C:   00000265  A$kpdlcdtestPCA$1574               kpdlcdtestPCA
+C:   00000266  A$kpdlcdtestPCA$1575               kpdlcdtestPCA
+C:   00000267  A$kpdlcdtestPCA$1576               kpdlcdtestPCA
+C:   00000269  A$kpdlcdtestPCA$1577               kpdlcdtestPCA
+C:   0000026B  A$kpdlcdtestPCA$1578               kpdlcdtestPCA
+C:   0000026D  A$kpdlcdtestPCA$1579               kpdlcdtestPCA
+C:   0000026F  A$kpdlcdtestPCA$1580               kpdlcdtestPCA
+C:   00000271  A$kpdlcdtestPCA$1581               kpdlcdtestPCA
+C:   00000273  A$kpdlcdtestPCA$1582               kpdlcdtestPCA
+C:   00000275  A$kpdlcdtestPCA$1583               kpdlcdtestPCA
+C:   00000277  A$kpdlcdtestPCA$1584               kpdlcdtestPCA
+C:   00000279  A$kpdlcdtestPCA$1585               kpdlcdtestPCA
+C:   0000027C  A$kpdlcdtestPCA$1586               kpdlcdtestPCA
+C:   0000027E  A$kpdlcdtestPCA$1587               kpdlcdtestPCA
+C:   00000280  A$kpdlcdtestPCA$1588               kpdlcdtestPCA
+C:   00000282  A$kpdlcdtestPCA$1589               kpdlcdtestPCA
+C:   00000284  A$kpdlcdtestPCA$1590               kpdlcdtestPCA
+C:   00000286  A$kpdlcdtestPCA$1594               kpdlcdtestPCA
+C:   00000286  C$i2c.h$161$1$89                   kpdlcdtestPCA
+C:   00000288  A$kpdlcdtestPCA$1595               kpdlcdtestPCA
+C:   0000028A  A$kpdlcdtestPCA$1596               kpdlcdtestPCA
+C:   0000028C  A$kpdlcdtestPCA$1597               kpdlcdtestPCA
+C:   0000028E  A$kpdlcdtestPCA$1598               kpdlcdtestPCA
+C:   0000028F  A$kpdlcdtestPCA$1599               kpdlcdtestPCA
+C:   00000291  A$kpdlcdtestPCA$1600               kpdlcdtestPCA
+C:   00000293  A$kpdlcdtestPCA$1601               kpdlcdtestPCA
+C:   00000295  A$kpdlcdtestPCA$1602               kpdlcdtestPCA
+C:   00000296  A$kpdlcdtestPCA$1603               kpdlcdtestPCA
+C:   00000298  A$kpdlcdtestPCA$1604               kpdlcdtestPCA
+C:   0000029A  A$kpdlcdtestPCA$1605               kpdlcdtestPCA
+C:   0000029C  A$kpdlcdtestPCA$1606               kpdlcdtestPCA
+C:   0000029D  A$kpdlcdtestPCA$1607               kpdlcdtestPCA
+C:   0000029F  A$kpdlcdtestPCA$1608               kpdlcdtestPCA
+C:   000002A1  A$kpdlcdtestPCA$1609               kpdlcdtestPCA
+C:   000002A3  A$kpdlcdtestPCA$1610               kpdlcdtestPCA
+C:   000002A4  A$kpdlcdtestPCA$1611               kpdlcdtestPCA
+C:   000002A6  A$kpdlcdtestPCA$1612               kpdlcdtestPCA
+C:   000002A8  A$kpdlcdtestPCA$1613               kpdlcdtestPCA
+C:   000002AA  A$kpdlcdtestPCA$1614               kpdlcdtestPCA
+C:   000002AB  A$kpdlcdtestPCA$1615               kpdlcdtestPCA
+C:   000002AD  A$kpdlcdtestPCA$1616               kpdlcdtestPCA
+C:   000002AF  A$kpdlcdtestPCA$1617               kpdlcdtestPCA
+C:   000002B1  A$kpdlcdtestPCA$1618               kpdlcdtestPCA
+C:   000002B3  A$kpdlcdtestPCA$1619               kpdlcdtestPCA
+C:   000002B5  A$kpdlcdtestPCA$1620               kpdlcdtestPCA
+C:   000002B7  A$kpdlcdtestPCA$1621               kpdlcdtestPCA
+C:   000002B9  A$kpdlcdtestPCA$1622               kpdlcdtestPCA
+C:   000002BC  A$kpdlcdtestPCA$1623               kpdlcdtestPCA
+C:   000002BE  A$kpdlcdtestPCA$1624               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 35.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000002C0  A$kpdlcdtestPCA$1625               kpdlcdtestPCA
+C:   000002C2  A$kpdlcdtestPCA$1628               kpdlcdtestPCA
+C:   000002C2  C$i2c.h$163$1$89                   kpdlcdtestPCA
+C:   000002C5  A$kpdlcdtestPCA$1629               kpdlcdtestPCA
+C:   000002C8  A$kpdlcdtestPCA$1630               kpdlcdtestPCA
+C:   000002C9  A$kpdlcdtestPCA$1631               kpdlcdtestPCA
+C:   000002CC  A$kpdlcdtestPCA$1632               kpdlcdtestPCA
+C:   000002CE  A$kpdlcdtestPCA$1633               kpdlcdtestPCA
+C:   000002D0  A$kpdlcdtestPCA$1636               kpdlcdtestPCA
+C:   000002D2  A$kpdlcdtestPCA$1640               kpdlcdtestPCA
+C:   000002D2  C$i2c.h$169$3$92                   kpdlcdtestPCA
+C:   000002D4  A$kpdlcdtestPCA$1641               kpdlcdtestPCA
+C:   000002D6  A$kpdlcdtestPCA$1642               kpdlcdtestPCA
+C:   000002D8  A$kpdlcdtestPCA$1643               kpdlcdtestPCA
+C:   000002DB  A$kpdlcdtestPCA$1644               kpdlcdtestPCA
+C:   000002DD  A$kpdlcdtestPCA$1645               kpdlcdtestPCA
+C:   000002DF  A$kpdlcdtestPCA$1646               kpdlcdtestPCA
+C:   000002E1  A$kpdlcdtestPCA$1647               kpdlcdtestPCA
+C:   000002E3  A$kpdlcdtestPCA$1648               kpdlcdtestPCA
+C:   000002E5  A$kpdlcdtestPCA$1649               kpdlcdtestPCA
+C:   000002E8  A$kpdlcdtestPCA$1650               kpdlcdtestPCA
+C:   000002EA  A$kpdlcdtestPCA$1652               kpdlcdtestPCA
+C:   000002ED  A$kpdlcdtestPCA$1654               kpdlcdtestPCA
+C:   000002F0  A$kpdlcdtestPCA$1655               kpdlcdtestPCA
+C:   000002F1  A$kpdlcdtestPCA$1656               kpdlcdtestPCA
+C:   000002F3  A$kpdlcdtestPCA$1657               kpdlcdtestPCA
+C:   000002F5  A$kpdlcdtestPCA$1658               kpdlcdtestPCA
+C:   000002F7  A$kpdlcdtestPCA$1659               kpdlcdtestPCA
+C:   000002F9  A$kpdlcdtestPCA$1660               kpdlcdtestPCA
+C:   000002FC  A$kpdlcdtestPCA$1661               kpdlcdtestPCA
+C:   000002FE  A$kpdlcdtestPCA$1662               kpdlcdtestPCA
+C:   00000300  A$kpdlcdtestPCA$1663               kpdlcdtestPCA
+C:   00000302  A$kpdlcdtestPCA$1664               kpdlcdtestPCA
+C:   00000304  A$kpdlcdtestPCA$1668               kpdlcdtestPCA
+C:   00000304  C$i2c.h$170$2$90                   kpdlcdtestPCA
+C:   00000307  A$kpdlcdtestPCA$1672               kpdlcdtestPCA
+C:   00000307  C$i2c.h$172$3$91                   kpdlcdtestPCA
+C:   00000309  A$kpdlcdtestPCA$1673               kpdlcdtestPCA
+C:   0000030B  A$kpdlcdtestPCA$1674               kpdlcdtestPCA
+C:   0000030E  A$kpdlcdtestPCA$1675               kpdlcdtestPCA
+C:   00000310  A$kpdlcdtestPCA$1676               kpdlcdtestPCA
+C:   00000312  A$kpdlcdtestPCA$1677               kpdlcdtestPCA
+C:   00000314  A$kpdlcdtestPCA$1678               kpdlcdtestPCA
+C:   00000317  A$kpdlcdtestPCA$1679               kpdlcdtestPCA
+C:   0000031A  A$kpdlcdtestPCA$1680               kpdlcdtestPCA
+C:   0000031B  A$kpdlcdtestPCA$1681               kpdlcdtestPCA
+C:   0000031D  A$kpdlcdtestPCA$1682               kpdlcdtestPCA
+C:   0000031F  A$kpdlcdtestPCA$1683               kpdlcdtestPCA
+C:   00000321  A$kpdlcdtestPCA$1684               kpdlcdtestPCA
+C:   00000324  A$kpdlcdtestPCA$1685               kpdlcdtestPCA
+C:   00000326  A$kpdlcdtestPCA$1686               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 36.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000328  A$kpdlcdtestPCA$1687               kpdlcdtestPCA
+C:   0000032A  A$kpdlcdtestPCA$1691               kpdlcdtestPCA
+C:   0000032A  C$i2c.h$173$3$91                   kpdlcdtestPCA
+C:   0000032C  A$kpdlcdtestPCA$1692               kpdlcdtestPCA
+C:   0000032E  A$kpdlcdtestPCA$1693               kpdlcdtestPCA
+C:   00000331  A$kpdlcdtestPCA$1697               kpdlcdtestPCA
+C:   00000331  C$i2c.h$177$3$92                   kpdlcdtestPCA
+C:   00000333  A$kpdlcdtestPCA$1698               kpdlcdtestPCA
+C:   00000335  A$kpdlcdtestPCA$1699               kpdlcdtestPCA
+C:   00000337  A$kpdlcdtestPCA$1700               kpdlcdtestPCA
+C:   00000339  A$kpdlcdtestPCA$1701               kpdlcdtestPCA
+C:   0000033B  A$kpdlcdtestPCA$1702               kpdlcdtestPCA
+C:   0000033D  A$kpdlcdtestPCA$1703               kpdlcdtestPCA
+C:   0000033F  A$kpdlcdtestPCA$1704               kpdlcdtestPCA
+C:   00000341  A$kpdlcdtestPCA$1705               kpdlcdtestPCA
+C:   00000343  A$kpdlcdtestPCA$1706               kpdlcdtestPCA
+C:   00000345  A$kpdlcdtestPCA$1707               kpdlcdtestPCA
+C:   00000347  A$kpdlcdtestPCA$1708               kpdlcdtestPCA
+C:   00000349  A$kpdlcdtestPCA$1709               kpdlcdtestPCA
+C:   0000034B  A$kpdlcdtestPCA$1710               kpdlcdtestPCA
+C:   0000034D  A$kpdlcdtestPCA$1711               kpdlcdtestPCA
+C:   0000034F  A$kpdlcdtestPCA$1712               kpdlcdtestPCA
+C:   00000351  A$kpdlcdtestPCA$1713               kpdlcdtestPCA
+C:   00000354  A$kpdlcdtestPCA$1714               kpdlcdtestPCA
+C:   00000356  A$kpdlcdtestPCA$1715               kpdlcdtestPCA
+C:   00000358  A$kpdlcdtestPCA$1716               kpdlcdtestPCA
+C:   0000035A  A$kpdlcdtestPCA$1717               kpdlcdtestPCA
+C:   0000035C  A$kpdlcdtestPCA$1718               kpdlcdtestPCA
+C:   0000035E  A$kpdlcdtestPCA$1719               kpdlcdtestPCA
+C:   00000360  A$kpdlcdtestPCA$1720               kpdlcdtestPCA
+C:   00000362  A$kpdlcdtestPCA$1721               kpdlcdtestPCA
+C:   00000364  A$kpdlcdtestPCA$1724               kpdlcdtestPCA
+C:   00000364  C$i2c.h$178$1$89                   kpdlcdtestPCA
+C:   00000366  A$kpdlcdtestPCA$1725               kpdlcdtestPCA
+C:   00000368  A$kpdlcdtestPCA$1726               kpdlcdtestPCA
+C:   0000036B  A$kpdlcdtestPCA$1727               kpdlcdtestPCA
+C:   0000036D  A$kpdlcdtestPCA$1728               kpdlcdtestPCA
+C:   0000036F  A$kpdlcdtestPCA$1729               kpdlcdtestPCA
+C:   00000371  A$kpdlcdtestPCA$1730               kpdlcdtestPCA
+C:   00000374  A$kpdlcdtestPCA$1731               kpdlcdtestPCA
+C:   00000376  A$kpdlcdtestPCA$1732               kpdlcdtestPCA
+C:   00000378  A$kpdlcdtestPCA$1733               kpdlcdtestPCA
+C:   0000037A  A$kpdlcdtestPCA$1734               kpdlcdtestPCA
+C:   0000037C  A$kpdlcdtestPCA$1735               kpdlcdtestPCA
+C:   0000037E  A$kpdlcdtestPCA$1736               kpdlcdtestPCA
+C:   00000380  A$kpdlcdtestPCA$1737               kpdlcdtestPCA
+C:   00000381  A$kpdlcdtestPCA$1738               kpdlcdtestPCA
+C:   00000382  A$kpdlcdtestPCA$1739               kpdlcdtestPCA
+C:   00000383  A$kpdlcdtestPCA$1740               kpdlcdtestPCA
+C:   00000384  A$kpdlcdtestPCA$1741               kpdlcdtestPCA
+C:   00000385  A$kpdlcdtestPCA$1742               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 37.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000386  A$kpdlcdtestPCA$1743               kpdlcdtestPCA
+C:   00000387  A$kpdlcdtestPCA$1744               kpdlcdtestPCA
+C:   00000389  A$kpdlcdtestPCA$1745               kpdlcdtestPCA
+C:   0000038A  A$kpdlcdtestPCA$1746               kpdlcdtestPCA
+C:   0000038B  A$kpdlcdtestPCA$1747               kpdlcdtestPCA
+C:   0000038D  A$kpdlcdtestPCA$1748               kpdlcdtestPCA
+C:   0000038E  A$kpdlcdtestPCA$1752               kpdlcdtestPCA
+C:   0000038E  C$i2c.h$179$3$92                   kpdlcdtestPCA
+C:   00000390  A$kpdlcdtestPCA$1753               kpdlcdtestPCA
+C:   00000392  A$kpdlcdtestPCA$1754               kpdlcdtestPCA
+C:   00000394  A$kpdlcdtestPCA$1755               kpdlcdtestPCA
+C:   00000396  A$kpdlcdtestPCA$1756               kpdlcdtestPCA
+C:   00000399  A$kpdlcdtestPCA$1757               kpdlcdtestPCA
+C:   0000039B  A$kpdlcdtestPCA$1758               kpdlcdtestPCA
+C:   0000039D  A$kpdlcdtestPCA$1759               kpdlcdtestPCA
+C:   0000039F  A$kpdlcdtestPCA$1760               kpdlcdtestPCA
+C:   000003A1  A$kpdlcdtestPCA$1761               kpdlcdtestPCA
+C:   000003A3  A$kpdlcdtestPCA$1762               kpdlcdtestPCA
+C:   000003A4  A$kpdlcdtestPCA$1763               kpdlcdtestPCA
+C:   000003A7  A$kpdlcdtestPCA$1764               kpdlcdtestPCA
+C:   000003AA  A$kpdlcdtestPCA$1765               kpdlcdtestPCA
+C:   000003AB  A$kpdlcdtestPCA$1766               kpdlcdtestPCA
+C:   000003AD  A$kpdlcdtestPCA$1767               kpdlcdtestPCA
+C:   000003AF  A$kpdlcdtestPCA$1768               kpdlcdtestPCA
+C:   000003B1  A$kpdlcdtestPCA$1769               kpdlcdtestPCA
+C:   000003B3  A$kpdlcdtestPCA$1770               kpdlcdtestPCA
+C:   000003B5  A$kpdlcdtestPCA$1771               kpdlcdtestPCA
+C:   000003B8  A$kpdlcdtestPCA$1772               kpdlcdtestPCA
+C:   000003BA  A$kpdlcdtestPCA$1773               kpdlcdtestPCA
+C:   000003BC  A$kpdlcdtestPCA$1774               kpdlcdtestPCA
+C:   000003BE  A$kpdlcdtestPCA$1775               kpdlcdtestPCA
+C:   000003C0  A$kpdlcdtestPCA$1776               kpdlcdtestPCA
+C:   000003C2  A$kpdlcdtestPCA$1780               kpdlcdtestPCA
+C:   000003C2  C$i2c.h$167$1$89                   kpdlcdtestPCA
+C:   000003C3  A$kpdlcdtestPCA$1781               kpdlcdtestPCA
+C:   000003C6  A$kpdlcdtestPCA$1783               kpdlcdtestPCA
+C:   000003C8  A$kpdlcdtestPCA$1784               kpdlcdtestPCA
+C:   000003CB  A$kpdlcdtestPCA$1788               kpdlcdtestPCA
+C:   000003CB  C$i2c.h$182$1$89                   kpdlcdtestPCA
+C:   000003CD  A$kpdlcdtestPCA$1789               kpdlcdtestPCA
+C:   000003CF  A$kpdlcdtestPCA$1793               kpdlcdtestPCA
+C:   000003CF  C$i2c.h$183$1$89                   kpdlcdtestPCA
+C:   000003CF  XG$kpd_input$0$0                   kpdlcdtestPCA
+C:   000003D0  A$kpdlcdtestPCA$1807               kpdlcdtestPCA
+C:   000003D0  C$i2c.h$192$1$89                   kpdlcdtestPCA
+C:   000003D0  G$delay_time$0$0                   kpdlcdtestPCA
+C:   000003D0  _delay_time                        kpdlcdtestPCA
+C:   000003D2  A$kpdlcdtestPCA$1808               kpdlcdtestPCA
+C:   000003D4  A$kpdlcdtestPCA$1809               kpdlcdtestPCA
+C:   000003D6  A$kpdlcdtestPCA$1810               kpdlcdtestPCA
+C:   000003D7  A$kpdlcdtestPCA$1813               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 38.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000003D7  C$i2c.h$196$1$94                   kpdlcdtestPCA
+C:   000003D9  A$kpdlcdtestPCA$1814               kpdlcdtestPCA
+C:   000003DB  A$kpdlcdtestPCA$1815               kpdlcdtestPCA
+C:   000003DD  A$kpdlcdtestPCA$1816               kpdlcdtestPCA
+C:   000003DF  A$kpdlcdtestPCA$1818               kpdlcdtestPCA
+C:   000003E0  A$kpdlcdtestPCA$1819               kpdlcdtestPCA
+C:   000003E1  A$kpdlcdtestPCA$1820               kpdlcdtestPCA
+C:   000003E2  A$kpdlcdtestPCA$1821               kpdlcdtestPCA
+C:   000003E3  A$kpdlcdtestPCA$1822               kpdlcdtestPCA
+C:   000003E4  A$kpdlcdtestPCA$1823               kpdlcdtestPCA
+C:   000003E5  A$kpdlcdtestPCA$1824               kpdlcdtestPCA
+C:   000003E6  A$kpdlcdtestPCA$1825               kpdlcdtestPCA
+C:   000003E7  A$kpdlcdtestPCA$1826               kpdlcdtestPCA
+C:   000003E8  A$kpdlcdtestPCA$1827               kpdlcdtestPCA
+C:   000003EA  A$kpdlcdtestPCA$1828               kpdlcdtestPCA
+C:   000003EB  A$kpdlcdtestPCA$1829               kpdlcdtestPCA
+C:   000003EE  A$kpdlcdtestPCA$1830               kpdlcdtestPCA
+C:   000003EF  A$kpdlcdtestPCA$1831               kpdlcdtestPCA
+C:   000003F2  A$kpdlcdtestPCA$1832               kpdlcdtestPCA
+C:   000003F3  A$kpdlcdtestPCA$1833               kpdlcdtestPCA
+C:   000003F6  A$kpdlcdtestPCA$1834               kpdlcdtestPCA
+C:   000003F7  A$kpdlcdtestPCA$1836               kpdlcdtestPCA
+C:   000003F9  A$kpdlcdtestPCA$1840               kpdlcdtestPCA
+C:   000003F9  C$i2c.h$197$1$94                   kpdlcdtestPCA
+C:   000003F9  XG$delay_time$0$0                  kpdlcdtestPCA
+C:   000003FA  A$kpdlcdtestPCA$1854               kpdlcdtestPCA
+C:   000003FA  C$i2c.h$200$1$94                   kpdlcdtestPCA
+C:   000003FA  C$i2c.h$202$1$96                   kpdlcdtestPCA
+C:   000003FA  G$i2c_start$0$0                    kpdlcdtestPCA
+C:   000003FA  _i2c_start                         kpdlcdtestPCA
+C:   000003FD  A$kpdlcdtestPCA$1857               kpdlcdtestPCA
+C:   000003FD  C$i2c.h$203$1$96                   kpdlcdtestPCA
+C:   000003FF  A$kpdlcdtestPCA$1861               kpdlcdtestPCA
+C:   000003FF  C$i2c.h$204$1$96                   kpdlcdtestPCA
+C:   00000402  A$kpdlcdtestPCA$1864               kpdlcdtestPCA
+C:   00000402  C$i2c.h$205$1$96                   kpdlcdtestPCA
+C:   00000404  A$kpdlcdtestPCA$1867               kpdlcdtestPCA
+C:   00000404  C$i2c.h$206$1$96                   kpdlcdtestPCA
+C:   00000406  A$kpdlcdtestPCA$1870               kpdlcdtestPCA
+C:   00000406  C$i2c.h$207$1$96                   kpdlcdtestPCA
+C:   00000406  XG$i2c_start$0$0                   kpdlcdtestPCA
+C:   00000407  A$kpdlcdtestPCA$1883               kpdlcdtestPCA
+C:   00000407  C$i2c.h$210$1$96                   kpdlcdtestPCA
+C:   00000407  G$i2c_write$0$0                    kpdlcdtestPCA
+C:   00000407  _i2c_write                         kpdlcdtestPCA
+C:   0000040A  A$kpdlcdtestPCA$1889               kpdlcdtestPCA
+C:   0000040A  C$i2c.h$213$1$98                   kpdlcdtestPCA
+C:   0000040A  C$i2c.h$214$1$98                   kpdlcdtestPCA
+C:   0000040D  A$kpdlcdtestPCA$1890               kpdlcdtestPCA
+C:   0000040F  A$kpdlcdtestPCA$1894               kpdlcdtestPCA
+C:   0000040F  C$i2c.h$215$1$98                   kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 39.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000040F  XG$i2c_write$0$0                   kpdlcdtestPCA
+C:   00000410  A$kpdlcdtestPCA$1907               kpdlcdtestPCA
+C:   00000410  C$i2c.h$218$1$98                   kpdlcdtestPCA
+C:   00000410  G$i2c_write_and_stop$0$0           kpdlcdtestPCA
+C:   00000410  _i2c_write_and_stop                kpdlcdtestPCA
+C:   00000413  A$kpdlcdtestPCA$1910               kpdlcdtestPCA
+C:   00000413  C$i2c.h$221$1$100                  kpdlcdtestPCA
+C:   00000415  A$kpdlcdtestPCA$1916               kpdlcdtestPCA
+C:   00000415  C$i2c.h$222$1$100                  kpdlcdtestPCA
+C:   00000415  C$i2c.h$223$1$100                  kpdlcdtestPCA
+C:   00000418  A$kpdlcdtestPCA$1917               kpdlcdtestPCA
+C:   0000041A  A$kpdlcdtestPCA$1921               kpdlcdtestPCA
+C:   0000041A  C$i2c.h$224$1$100                  kpdlcdtestPCA
+C:   0000041A  XG$i2c_write_and_stop$0$0          kpdlcdtestPCA
+C:   0000041B  A$kpdlcdtestPCA$1937               kpdlcdtestPCA
+C:   0000041B  C$i2c.h$227$1$100                  kpdlcdtestPCA
+C:   0000041B  C$i2c.h$231$1$102                  kpdlcdtestPCA
+C:   0000041B  G$i2c_read$0$0                     kpdlcdtestPCA
+C:   0000041B  _i2c_read                          kpdlcdtestPCA
+C:   0000041E  A$kpdlcdtestPCA$1940               kpdlcdtestPCA
+C:   0000041E  C$i2c.h$232$1$102                  kpdlcdtestPCA
+C:   00000421  A$kpdlcdtestPCA$1943               kpdlcdtestPCA
+C:   00000421  C$i2c.h$233$1$102                  kpdlcdtestPCA
+C:   00000423  A$kpdlcdtestPCA$1948               kpdlcdtestPCA
+C:   00000423  C$i2c.h$234$1$102                  kpdlcdtestPCA
+C:   00000423  C$i2c.h$235$1$102                  kpdlcdtestPCA
+C:   00000423  XG$i2c_read$0$0                    kpdlcdtestPCA
+C:   00000424  A$kpdlcdtestPCA$1964               kpdlcdtestPCA
+C:   00000424  C$i2c.h$238$1$102                  kpdlcdtestPCA
+C:   00000424  C$i2c.h$242$1$104                  kpdlcdtestPCA
+C:   00000424  G$i2c_read_and_stop$0$0            kpdlcdtestPCA
+C:   00000424  _i2c_read_and_stop                 kpdlcdtestPCA
+C:   00000427  A$kpdlcdtestPCA$1967               kpdlcdtestPCA
+C:   00000427  C$i2c.h$243$1$104                  kpdlcdtestPCA
+C:   00000429  A$kpdlcdtestPCA$1970               kpdlcdtestPCA
+C:   00000429  C$i2c.h$244$1$104                  kpdlcdtestPCA
+C:   0000042B  A$kpdlcdtestPCA$1973               kpdlcdtestPCA
+C:   0000042B  C$i2c.h$245$1$104                  kpdlcdtestPCA
+C:   0000042D  A$kpdlcdtestPCA$1979               kpdlcdtestPCA
+C:   0000042D  C$i2c.h$246$1$104                  kpdlcdtestPCA
+C:   0000042D  C$i2c.h$247$1$104                  kpdlcdtestPCA
+C:   00000430  A$kpdlcdtestPCA$1980               kpdlcdtestPCA
+C:   00000432  A$kpdlcdtestPCA$1984               kpdlcdtestPCA
+C:   00000432  C$i2c.h$248$1$104                  kpdlcdtestPCA
+C:   00000434  A$kpdlcdtestPCA$1987               kpdlcdtestPCA
+C:   00000434  C$i2c.h$249$1$104                  kpdlcdtestPCA
+C:   00000434  XG$i2c_read_and_stop$0$0           kpdlcdtestPCA
+C:   00000435  A$kpdlcdtestPCA$2004               kpdlcdtestPCA
+C:   00000435  C$i2c.h$252$1$104                  kpdlcdtestPCA
+C:   00000435  G$i2c_write_data$0$0               kpdlcdtestPCA
+C:   00000435  _i2c_write_data                    kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 40.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000437  A$kpdlcdtestPCA$2007               kpdlcdtestPCA
+C:   00000437  C$i2c.h$256$1$106                  kpdlcdtestPCA
+C:   00000439  A$kpdlcdtestPCA$2010               kpdlcdtestPCA
+C:   00000439  C$i2c.h$257$1$106                  kpdlcdtestPCA
+C:   0000043B  A$kpdlcdtestPCA$2011               kpdlcdtestPCA
+C:   0000043E  A$kpdlcdtestPCA$2012               kpdlcdtestPCA
+C:   00000440  A$kpdlcdtestPCA$2015               kpdlcdtestPCA
+C:   00000440  C$i2c.h$258$1$106                  kpdlcdtestPCA
+C:   00000442  A$kpdlcdtestPCA$2016               kpdlcdtestPCA
+C:   00000443  A$kpdlcdtestPCA$2017               kpdlcdtestPCA
+C:   00000445  A$kpdlcdtestPCA$2018               kpdlcdtestPCA
+C:   00000448  A$kpdlcdtestPCA$2021               kpdlcdtestPCA
+C:   00000448  C$i2c.h$259$1$106                  kpdlcdtestPCA
+C:   0000044B  A$kpdlcdtestPCA$2022               kpdlcdtestPCA
+C:   0000044E  A$kpdlcdtestPCA$2025               kpdlcdtestPCA
+C:   00000450  A$kpdlcdtestPCA$2027               kpdlcdtestPCA
+C:   00000452  A$kpdlcdtestPCA$2028               kpdlcdtestPCA
+C:   00000454  A$kpdlcdtestPCA$2029               kpdlcdtestPCA
+C:   00000455  A$kpdlcdtestPCA$2030               kpdlcdtestPCA
+C:   00000458  A$kpdlcdtestPCA$2031               kpdlcdtestPCA
+C:   00000459  A$kpdlcdtestPCA$2033               kpdlcdtestPCA
+C:   0000045B  A$kpdlcdtestPCA$2034               kpdlcdtestPCA
+C:   0000045D  A$kpdlcdtestPCA$2035               kpdlcdtestPCA
+C:   0000045E  A$kpdlcdtestPCA$2036               kpdlcdtestPCA
+C:   0000045F  A$kpdlcdtestPCA$2037               kpdlcdtestPCA
+C:   00000460  A$kpdlcdtestPCA$2038               kpdlcdtestPCA
+C:   00000461  A$kpdlcdtestPCA$2039               kpdlcdtestPCA
+C:   00000463  A$kpdlcdtestPCA$2040               kpdlcdtestPCA
+C:   00000465  A$kpdlcdtestPCA$2041               kpdlcdtestPCA
+C:   00000468  A$kpdlcdtestPCA$2042               kpdlcdtestPCA
+C:   0000046A  A$kpdlcdtestPCA$2043               kpdlcdtestPCA
+C:   0000046C  A$kpdlcdtestPCA$2046               kpdlcdtestPCA
+C:   0000046C  C$i2c.h$261$1$106                  kpdlcdtestPCA
+C:   0000046D  A$kpdlcdtestPCA$2047               kpdlcdtestPCA
+C:   0000046F  A$kpdlcdtestPCA$2048               kpdlcdtestPCA
+C:   00000470  A$kpdlcdtestPCA$2049               kpdlcdtestPCA
+C:   00000471  A$kpdlcdtestPCA$2050               kpdlcdtestPCA
+C:   00000473  A$kpdlcdtestPCA$2051               kpdlcdtestPCA
+C:   00000474  A$kpdlcdtestPCA$2052               kpdlcdtestPCA
+C:   00000476  A$kpdlcdtestPCA$2053               kpdlcdtestPCA
+C:   00000478  A$kpdlcdtestPCA$2054               kpdlcdtestPCA
+C:   0000047A  A$kpdlcdtestPCA$2055               kpdlcdtestPCA
+C:   0000047C  A$kpdlcdtestPCA$2056               kpdlcdtestPCA
+C:   0000047F  A$kpdlcdtestPCA$2057               kpdlcdtestPCA
+C:   00000481  A$kpdlcdtestPCA$2058               kpdlcdtestPCA
+C:   00000483  A$kpdlcdtestPCA$2059               kpdlcdtestPCA
+C:   00000486  A$kpdlcdtestPCA$2060               kpdlcdtestPCA
+C:   00000488  A$kpdlcdtestPCA$2063               kpdlcdtestPCA
+C:   00000488  C$i2c.h$260$1$106                  kpdlcdtestPCA
+C:   00000489  A$kpdlcdtestPCA$2064               kpdlcdtestPCA
+C:   0000048B  A$kpdlcdtestPCA$2068               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 41.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000048B  C$i2c.h$262$1$106                  kpdlcdtestPCA
+C:   0000048D  A$kpdlcdtestPCA$2069               kpdlcdtestPCA
+C:   0000048F  A$kpdlcdtestPCA$2070               kpdlcdtestPCA
+C:   00000490  A$kpdlcdtestPCA$2071               kpdlcdtestPCA
+C:   00000493  A$kpdlcdtestPCA$2072               kpdlcdtestPCA
+C:   00000494  A$kpdlcdtestPCA$2074               kpdlcdtestPCA
+C:   00000495  A$kpdlcdtestPCA$2075               kpdlcdtestPCA
+C:   00000497  A$kpdlcdtestPCA$2076               kpdlcdtestPCA
+C:   00000498  A$kpdlcdtestPCA$2077               kpdlcdtestPCA
+C:   00000499  A$kpdlcdtestPCA$2078               kpdlcdtestPCA
+C:   0000049B  A$kpdlcdtestPCA$2079               kpdlcdtestPCA
+C:   0000049C  A$kpdlcdtestPCA$2080               kpdlcdtestPCA
+C:   0000049E  A$kpdlcdtestPCA$2081               kpdlcdtestPCA
+C:   000004A0  A$kpdlcdtestPCA$2082               kpdlcdtestPCA
+C:   000004A2  A$kpdlcdtestPCA$2083               kpdlcdtestPCA
+C:   000004A4  A$kpdlcdtestPCA$2084               kpdlcdtestPCA
+C:   000004A7  A$kpdlcdtestPCA$2085               kpdlcdtestPCA
+C:   000004A9  A$kpdlcdtestPCA$2086               kpdlcdtestPCA
+C:   000004AC  A$kpdlcdtestPCA$2089               kpdlcdtestPCA
+C:   000004AC  C$i2c.h$263$1$106                  kpdlcdtestPCA
+C:   000004AE  A$kpdlcdtestPCA$2092               kpdlcdtestPCA
+C:   000004AE  C$i2c.h$264$1$106                  kpdlcdtestPCA
+C:   000004AE  XG$i2c_write_data$0$0              kpdlcdtestPCA
+C:   000004AF  A$kpdlcdtestPCA$2109               kpdlcdtestPCA
+C:   000004AF  C$i2c.h$267$1$106                  kpdlcdtestPCA
+C:   000004AF  G$i2c_read_data$0$0                kpdlcdtestPCA
+C:   000004AF  _i2c_read_data                     kpdlcdtestPCA
+C:   000004B1  A$kpdlcdtestPCA$2112               kpdlcdtestPCA
+C:   000004B1  C$i2c.h$271$1$108                  kpdlcdtestPCA
+C:   000004B3  A$kpdlcdtestPCA$2115               kpdlcdtestPCA
+C:   000004B3  C$i2c.h$272$1$108                  kpdlcdtestPCA
+C:   000004B5  A$kpdlcdtestPCA$2116               kpdlcdtestPCA
+C:   000004B8  A$kpdlcdtestPCA$2117               kpdlcdtestPCA
+C:   000004BA  A$kpdlcdtestPCA$2120               kpdlcdtestPCA
+C:   000004BA  C$i2c.h$273$1$108                  kpdlcdtestPCA
+C:   000004BC  A$kpdlcdtestPCA$2121               kpdlcdtestPCA
+C:   000004BD  A$kpdlcdtestPCA$2122               kpdlcdtestPCA
+C:   000004BF  A$kpdlcdtestPCA$2123               kpdlcdtestPCA
+C:   000004C1  A$kpdlcdtestPCA$2124               kpdlcdtestPCA
+C:   000004C4  A$kpdlcdtestPCA$2127               kpdlcdtestPCA
+C:   000004C4  C$i2c.h$274$1$108                  kpdlcdtestPCA
+C:   000004C7  A$kpdlcdtestPCA$2128               kpdlcdtestPCA
+C:   000004CA  A$kpdlcdtestPCA$2131               kpdlcdtestPCA
+C:   000004CA  C$i2c.h$275$1$108                  kpdlcdtestPCA
+C:   000004CD  A$kpdlcdtestPCA$2132               kpdlcdtestPCA
+C:   000004CF  A$kpdlcdtestPCA$2135               kpdlcdtestPCA
+C:   000004CF  C$i2c.h$276$1$108                  kpdlcdtestPCA
+C:   000004D1  A$kpdlcdtestPCA$2136               kpdlcdtestPCA
+C:   000004D2  A$kpdlcdtestPCA$2137               kpdlcdtestPCA
+C:   000004D4  A$kpdlcdtestPCA$2138               kpdlcdtestPCA
+C:   000004D7  A$kpdlcdtestPCA$2141               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 42.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000004D9  A$kpdlcdtestPCA$2143               kpdlcdtestPCA
+C:   000004DB  A$kpdlcdtestPCA$2144               kpdlcdtestPCA
+C:   000004DD  A$kpdlcdtestPCA$2145               kpdlcdtestPCA
+C:   000004DE  A$kpdlcdtestPCA$2146               kpdlcdtestPCA
+C:   000004E1  A$kpdlcdtestPCA$2147               kpdlcdtestPCA
+C:   000004E2  A$kpdlcdtestPCA$2149               kpdlcdtestPCA
+C:   000004E4  A$kpdlcdtestPCA$2150               kpdlcdtestPCA
+C:   000004E6  A$kpdlcdtestPCA$2151               kpdlcdtestPCA
+C:   000004E7  A$kpdlcdtestPCA$2152               kpdlcdtestPCA
+C:   000004E8  A$kpdlcdtestPCA$2153               kpdlcdtestPCA
+C:   000004E9  A$kpdlcdtestPCA$2154               kpdlcdtestPCA
+C:   000004EA  A$kpdlcdtestPCA$2155               kpdlcdtestPCA
+C:   000004EC  A$kpdlcdtestPCA$2156               kpdlcdtestPCA
+C:   000004EE  A$kpdlcdtestPCA$2157               kpdlcdtestPCA
+C:   000004F1  A$kpdlcdtestPCA$2158               kpdlcdtestPCA
+C:   000004F3  A$kpdlcdtestPCA$2159               kpdlcdtestPCA
+C:   000004F5  A$kpdlcdtestPCA$2162               kpdlcdtestPCA
+C:   000004F5  C$i2c.h$279$2$109                  kpdlcdtestPCA
+C:   000004F7  A$kpdlcdtestPCA$2165               kpdlcdtestPCA
+C:   000004F7  C$i2c.h$280$2$109                  kpdlcdtestPCA
+C:   000004F8  A$kpdlcdtestPCA$2166               kpdlcdtestPCA
+C:   000004FA  A$kpdlcdtestPCA$2167               kpdlcdtestPCA
+C:   000004FB  A$kpdlcdtestPCA$2168               kpdlcdtestPCA
+C:   000004FC  A$kpdlcdtestPCA$2169               kpdlcdtestPCA
+C:   000004FE  A$kpdlcdtestPCA$2170               kpdlcdtestPCA
+C:   000004FF  A$kpdlcdtestPCA$2171               kpdlcdtestPCA
+C:   00000501  A$kpdlcdtestPCA$2172               kpdlcdtestPCA
+C:   00000503  A$kpdlcdtestPCA$2173               kpdlcdtestPCA
+C:   00000505  A$kpdlcdtestPCA$2174               kpdlcdtestPCA
+C:   00000507  A$kpdlcdtestPCA$2175               kpdlcdtestPCA
+C:   00000509  A$kpdlcdtestPCA$2176               kpdlcdtestPCA
+C:   0000050C  A$kpdlcdtestPCA$2177               kpdlcdtestPCA
+C:   0000050E  A$kpdlcdtestPCA$2178               kpdlcdtestPCA
+C:   00000510  A$kpdlcdtestPCA$2179               kpdlcdtestPCA
+C:   00000512  A$kpdlcdtestPCA$2180               kpdlcdtestPCA
+C:   00000514  A$kpdlcdtestPCA$2181               kpdlcdtestPCA
+C:   00000516  A$kpdlcdtestPCA$2182               kpdlcdtestPCA
+C:   00000518  A$kpdlcdtestPCA$2183               kpdlcdtestPCA
+C:   0000051A  A$kpdlcdtestPCA$2184               kpdlcdtestPCA
+C:   0000051C  A$kpdlcdtestPCA$2185               kpdlcdtestPCA
+C:   0000051D  A$kpdlcdtestPCA$2186               kpdlcdtestPCA
+C:   00000520  A$kpdlcdtestPCA$2189               kpdlcdtestPCA
+C:   00000520  C$i2c.h$277$1$108                  kpdlcdtestPCA
+C:   00000521  A$kpdlcdtestPCA$2190               kpdlcdtestPCA
+C:   00000523  A$kpdlcdtestPCA$2194               kpdlcdtestPCA
+C:   00000523  C$i2c.h$282$1$108                  kpdlcdtestPCA
+C:   00000525  A$kpdlcdtestPCA$2197               kpdlcdtestPCA
+C:   00000525  C$i2c.h$283$1$108                  kpdlcdtestPCA
+C:   00000527  A$kpdlcdtestPCA$2198               kpdlcdtestPCA
+C:   00000529  A$kpdlcdtestPCA$2199               kpdlcdtestPCA
+C:   0000052A  A$kpdlcdtestPCA$2200               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 43.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000052D  A$kpdlcdtestPCA$2201               kpdlcdtestPCA
+C:   0000052E  A$kpdlcdtestPCA$2203               kpdlcdtestPCA
+C:   0000052F  A$kpdlcdtestPCA$2204               kpdlcdtestPCA
+C:   00000531  A$kpdlcdtestPCA$2205               kpdlcdtestPCA
+C:   00000532  A$kpdlcdtestPCA$2206               kpdlcdtestPCA
+C:   00000533  A$kpdlcdtestPCA$2207               kpdlcdtestPCA
+C:   00000535  A$kpdlcdtestPCA$2208               kpdlcdtestPCA
+C:   00000536  A$kpdlcdtestPCA$2209               kpdlcdtestPCA
+C:   00000538  A$kpdlcdtestPCA$2210               kpdlcdtestPCA
+C:   0000053A  A$kpdlcdtestPCA$2211               kpdlcdtestPCA
+C:   0000053C  A$kpdlcdtestPCA$2212               kpdlcdtestPCA
+C:   0000053E  A$kpdlcdtestPCA$2213               kpdlcdtestPCA
+C:   00000541  A$kpdlcdtestPCA$2214               kpdlcdtestPCA
+C:   00000543  A$kpdlcdtestPCA$2215               kpdlcdtestPCA
+C:   00000545  A$kpdlcdtestPCA$2216               kpdlcdtestPCA
+C:   00000547  A$kpdlcdtestPCA$2217               kpdlcdtestPCA
+C:   00000549  A$kpdlcdtestPCA$2218               kpdlcdtestPCA
+C:   0000054B  A$kpdlcdtestPCA$2219               kpdlcdtestPCA
+C:   0000054D  A$kpdlcdtestPCA$2220               kpdlcdtestPCA
+C:   0000054F  A$kpdlcdtestPCA$2221               kpdlcdtestPCA
+C:   00000550  A$kpdlcdtestPCA$2222               kpdlcdtestPCA
+C:   00000553  A$kpdlcdtestPCA$2225               kpdlcdtestPCA
+C:   00000553  C$i2c.h$284$1$108                  kpdlcdtestPCA
+C:   00000555  A$kpdlcdtestPCA$2228               kpdlcdtestPCA
+C:   00000555  C$i2c.h$285$1$108                  kpdlcdtestPCA
+C:   00000555  XG$i2c_read_data$0$0               kpdlcdtestPCA
+C:   00000556  A$kpdlcdtestPCA$2241               kpdlcdtestPCA
+C:   00000556  C$i2c.h$294$1$108                  kpdlcdtestPCA
+C:   00000556  C$i2c.h$298$1$111                  kpdlcdtestPCA
+C:   00000556  G$Accel_Init$0$0                   kpdlcdtestPCA
+C:   00000556  _Accel_Init                        kpdlcdtestPCA
+C:   00000559  A$kpdlcdtestPCA$2244               kpdlcdtestPCA
+C:   00000559  C$i2c.h$300$1$111                  kpdlcdtestPCA
+C:   0000055C  A$kpdlcdtestPCA$2247               kpdlcdtestPCA
+C:   0000055C  C$i2c.h$301$1$111                  kpdlcdtestPCA
+C:   0000055F  A$kpdlcdtestPCA$2250               kpdlcdtestPCA
+C:   0000055F  C$i2c.h$302$1$111                  kpdlcdtestPCA
+C:   00000562  A$kpdlcdtestPCA$2253               kpdlcdtestPCA
+C:   00000562  C$i2c.h$304$1$111                  kpdlcdtestPCA
+C:   00000565  A$kpdlcdtestPCA$2254               kpdlcdtestPCA
+C:   00000568  A$kpdlcdtestPCA$2255               kpdlcdtestPCA
+C:   0000056B  A$kpdlcdtestPCA$2256               kpdlcdtestPCA
+C:   0000056E  A$kpdlcdtestPCA$2257               kpdlcdtestPCA
+C:   00000571  A$kpdlcdtestPCA$2258               kpdlcdtestPCA
+C:   00000574  A$kpdlcdtestPCA$2259               kpdlcdtestPCA
+C:   00000577  A$kpdlcdtestPCA$2262               kpdlcdtestPCA
+C:   00000577  C$i2c.h$310$1$111                  kpdlcdtestPCA
+C:   00000577  XG$Accel_Init$0$0                  kpdlcdtestPCA
+C:   00000578  A$kpdlcdtestPCA$2275               kpdlcdtestPCA
+C:   00000578  C$i2c.h$313$1$111                  kpdlcdtestPCA
+C:   00000578  C$i2c.h$318$1$113                  kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 44.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000578  G$Accel_Init_C$0$0                 kpdlcdtestPCA
+C:   00000578  _Accel_Init_C                      kpdlcdtestPCA
+C:   0000057B  A$kpdlcdtestPCA$2278               kpdlcdtestPCA
+C:   0000057B  C$i2c.h$319$1$113                  kpdlcdtestPCA
+C:   0000057E  A$kpdlcdtestPCA$2279               kpdlcdtestPCA
+C:   00000581  A$kpdlcdtestPCA$2280               kpdlcdtestPCA
+C:   00000584  A$kpdlcdtestPCA$2281               kpdlcdtestPCA
+C:   00000587  A$kpdlcdtestPCA$2282               kpdlcdtestPCA
+C:   0000058A  A$kpdlcdtestPCA$2283               kpdlcdtestPCA
+C:   0000058D  A$kpdlcdtestPCA$2284               kpdlcdtestPCA
+C:   00000590  A$kpdlcdtestPCA$2287               kpdlcdtestPCA
+C:   00000590  C$i2c.h$321$1$113                  kpdlcdtestPCA
+C:   00000593  A$kpdlcdtestPCA$2290               kpdlcdtestPCA
+C:   00000593  C$i2c.h$323$1$113                  kpdlcdtestPCA
+C:   00000596  A$kpdlcdtestPCA$2293               kpdlcdtestPCA
+C:   00000596  C$i2c.h$325$1$113                  kpdlcdtestPCA
+C:   00000599  A$kpdlcdtestPCA$2296               kpdlcdtestPCA
+C:   00000599  C$i2c.h$326$1$113                  kpdlcdtestPCA
+C:   0000059C  A$kpdlcdtestPCA$2297               kpdlcdtestPCA
+C:   0000059F  A$kpdlcdtestPCA$2298               kpdlcdtestPCA
+C:   000005A2  A$kpdlcdtestPCA$2299               kpdlcdtestPCA
+C:   000005A5  A$kpdlcdtestPCA$2300               kpdlcdtestPCA
+C:   000005A8  A$kpdlcdtestPCA$2301               kpdlcdtestPCA
+C:   000005AB  A$kpdlcdtestPCA$2302               kpdlcdtestPCA
+C:   000005AE  A$kpdlcdtestPCA$2305               kpdlcdtestPCA
+C:   000005AE  C$i2c.h$328$1$113                  kpdlcdtestPCA
+C:   000005AE  XG$Accel_Init_C$0$0                kpdlcdtestPCA
+C:   000005AF  A$kpdlcdtestPCA$2320               kpdlcdtestPCA
+C:   000005AF  C$kpdlcdtestPCA.c$37$1$113         kpdlcdtestPCA
+C:   000005AF  C$kpdlcdtestPCA.c$41$1$122         kpdlcdtestPCA
+C:   000005AF  G$main$0$0                         kpdlcdtestPCA
+C:   000005AF  _main                              kpdlcdtestPCA
+C:   000005B2  A$kpdlcdtestPCA$2323               kpdlcdtestPCA
+C:   000005B2  C$kpdlcdtestPCA.c$42$1$122         kpdlcdtestPCA
+C:   000005B5  A$kpdlcdtestPCA$2326               kpdlcdtestPCA
+C:   000005B5  C$kpdlcdtestPCA.c$43$1$122         kpdlcdtestPCA
+C:   000005B8  A$kpdlcdtestPCA$2329               kpdlcdtestPCA
+C:   000005B8  C$kpdlcdtestPCA.c$44$1$122         kpdlcdtestPCA
+C:   000005BB  A$kpdlcdtestPCA$2332               kpdlcdtestPCA
+C:   000005BB  C$kpdlcdtestPCA.c$45$1$122         kpdlcdtestPCA
+C:   000005BE  A$kpdlcdtestPCA$2335               kpdlcdtestPCA
+C:   000005BE  C$kpdlcdtestPCA.c$46$1$122         kpdlcdtestPCA
+C:   000005C1  A$kpdlcdtestPCA$2336               kpdlcdtestPCA
+C:   000005C4  A$kpdlcdtestPCA$2339               kpdlcdtestPCA
+C:   000005C4  C$kpdlcdtestPCA.c$47$1$122         kpdlcdtestPCA
+C:   000005C6  A$kpdlcdtestPCA$2340               kpdlcdtestPCA
+C:   000005C8  A$kpdlcdtestPCA$2341               kpdlcdtestPCA
+C:   000005CA  A$kpdlcdtestPCA$2342               kpdlcdtestPCA
+C:   000005CC  A$kpdlcdtestPCA$2343               kpdlcdtestPCA
+C:   000005CE  A$kpdlcdtestPCA$2344               kpdlcdtestPCA
+C:   000005D0  A$kpdlcdtestPCA$2345               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 45.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000005D3  A$kpdlcdtestPCA$2346               kpdlcdtestPCA
+C:   000005D5  A$kpdlcdtestPCA$2347               kpdlcdtestPCA
+C:   000005D7  A$kpdlcdtestPCA$2348               kpdlcdtestPCA
+C:   000005D9  A$kpdlcdtestPCA$2351               kpdlcdtestPCA
+C:   000005D9  C$kpdlcdtestPCA.c$49$1$122         kpdlcdtestPCA
+C:   000005DA  A$kpdlcdtestPCA$2352               kpdlcdtestPCA
+C:   000005DC  A$kpdlcdtestPCA$2353               kpdlcdtestPCA
+C:   000005DE  A$kpdlcdtestPCA$2357               kpdlcdtestPCA
+C:   000005DE  C$kpdlcdtestPCA.c$50$1$122         kpdlcdtestPCA
+C:   000005DF  A$kpdlcdtestPCA$2358               kpdlcdtestPCA
+C:   000005E1  A$kpdlcdtestPCA$2359               kpdlcdtestPCA
+C:   000005E3  A$kpdlcdtestPCA$2360               kpdlcdtestPCA
+C:   000005E5  A$kpdlcdtestPCA$2361               kpdlcdtestPCA
+C:   000005E7  A$kpdlcdtestPCA$2362               kpdlcdtestPCA
+C:   000005E9  A$kpdlcdtestPCA$2365               kpdlcdtestPCA
+C:   000005E9  C$kpdlcdtestPCA.c$52$1$122         kpdlcdtestPCA
+C:   000005EC  A$kpdlcdtestPCA$2368               kpdlcdtestPCA
+C:   000005EC  C$kpdlcdtestPCA.c$53$1$122         kpdlcdtestPCA
+C:   000005EE  A$kpdlcdtestPCA$2369               kpdlcdtestPCA
+C:   000005F0  A$kpdlcdtestPCA$2370               kpdlcdtestPCA
+C:   000005F2  A$kpdlcdtestPCA$2371               kpdlcdtestPCA
+C:   000005F4  A$kpdlcdtestPCA$2372               kpdlcdtestPCA
+C:   000005F6  A$kpdlcdtestPCA$2373               kpdlcdtestPCA
+C:   000005F8  A$kpdlcdtestPCA$2374               kpdlcdtestPCA
+C:   000005FB  A$kpdlcdtestPCA$2375               kpdlcdtestPCA
+C:   000005FD  A$kpdlcdtestPCA$2376               kpdlcdtestPCA
+C:   000005FF  A$kpdlcdtestPCA$2377               kpdlcdtestPCA
+C:   00000601  A$kpdlcdtestPCA$2383               kpdlcdtestPCA
+C:   00000601  C$kpdlcdtestPCA.c$54$1$122         kpdlcdtestPCA
+C:   00000601  C$kpdlcdtestPCA.c$57$2$123         kpdlcdtestPCA
+C:   00000604  A$kpdlcdtestPCA$2384               kpdlcdtestPCA
+C:   00000607  A$kpdlcdtestPCA$2385               kpdlcdtestPCA
+C:   00000609  A$kpdlcdtestPCA$2386               kpdlcdtestPCA
+C:   0000060B  A$kpdlcdtestPCA$2389               kpdlcdtestPCA
+C:   0000060B  C$kpdlcdtestPCA.c$58$2$123         kpdlcdtestPCA
+C:   0000060D  A$kpdlcdtestPCA$2390               kpdlcdtestPCA
+C:   0000060F  A$kpdlcdtestPCA$2391               kpdlcdtestPCA
+C:   00000612  A$kpdlcdtestPCA$2394               kpdlcdtestPCA
+C:   00000612  C$kpdlcdtestPCA.c$60$2$123         kpdlcdtestPCA
+C:   00000615  A$kpdlcdtestPCA$2395               kpdlcdtestPCA
+C:   00000617  A$kpdlcdtestPCA$2396               kpdlcdtestPCA
+C:   00000619  A$kpdlcdtestPCA$2399               kpdlcdtestPCA
+C:   00000619  C$kpdlcdtestPCA.c$61$2$123         kpdlcdtestPCA
+C:   0000061B  A$kpdlcdtestPCA$2400               kpdlcdtestPCA
+C:   0000061D  A$kpdlcdtestPCA$2401               kpdlcdtestPCA
+C:   0000061F  A$kpdlcdtestPCA$2402               kpdlcdtestPCA
+C:   00000621  A$kpdlcdtestPCA$2403               kpdlcdtestPCA
+C:   00000623  A$kpdlcdtestPCA$2404               kpdlcdtestPCA
+C:   00000625  A$kpdlcdtestPCA$2405               kpdlcdtestPCA
+C:   00000627  A$kpdlcdtestPCA$2406               kpdlcdtestPCA
+C:   00000629  A$kpdlcdtestPCA$2407               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 46.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000062B  A$kpdlcdtestPCA$2408               kpdlcdtestPCA
+C:   0000062D  A$kpdlcdtestPCA$2409               kpdlcdtestPCA
+C:   0000062F  A$kpdlcdtestPCA$2410               kpdlcdtestPCA
+C:   00000631  A$kpdlcdtestPCA$2411               kpdlcdtestPCA
+C:   00000634  A$kpdlcdtestPCA$2412               kpdlcdtestPCA
+C:   00000636  A$kpdlcdtestPCA$2413               kpdlcdtestPCA
+C:   00000638  A$kpdlcdtestPCA$2414               kpdlcdtestPCA
+C:   0000063A  A$kpdlcdtestPCA$2415               kpdlcdtestPCA
+C:   0000063C  A$kpdlcdtestPCA$2416               kpdlcdtestPCA
+C:   0000063E  A$kpdlcdtestPCA$2419               kpdlcdtestPCA
+C:   0000063E  C$kpdlcdtestPCA.c$62$2$123         kpdlcdtestPCA
+C:   00000640  A$kpdlcdtestPCA$2420               kpdlcdtestPCA
+C:   00000642  A$kpdlcdtestPCA$2421               kpdlcdtestPCA
+C:   00000644  A$kpdlcdtestPCA$2422               kpdlcdtestPCA
+C:   00000646  A$kpdlcdtestPCA$2423               kpdlcdtestPCA
+C:   00000648  A$kpdlcdtestPCA$2424               kpdlcdtestPCA
+C:   0000064A  A$kpdlcdtestPCA$2425               kpdlcdtestPCA
+C:   0000064C  A$kpdlcdtestPCA$2426               kpdlcdtestPCA
+C:   0000064E  A$kpdlcdtestPCA$2427               kpdlcdtestPCA
+C:   00000650  A$kpdlcdtestPCA$2428               kpdlcdtestPCA
+C:   00000652  A$kpdlcdtestPCA$2429               kpdlcdtestPCA
+C:   00000655  A$kpdlcdtestPCA$2430               kpdlcdtestPCA
+C:   00000657  A$kpdlcdtestPCA$2431               kpdlcdtestPCA
+C:   00000659  A$kpdlcdtestPCA$2432               kpdlcdtestPCA
+C:   0000065B  A$kpdlcdtestPCA$2433               kpdlcdtestPCA
+C:   0000065D  A$kpdlcdtestPCA$2436               kpdlcdtestPCA
+C:   0000065D  C$kpdlcdtestPCA.c$95$1$122         kpdlcdtestPCA
+C:   0000065D  XG$main$0$0                        kpdlcdtestPCA
+C:   0000065E  A$kpdlcdtestPCA$2449               kpdlcdtestPCA
+C:   0000065E  C$kpdlcdtestPCA.c$100$1$125        kpdlcdtestPCA
+C:   0000065E  C$kpdlcdtestPCA.c$98$1$122         kpdlcdtestPCA
+C:   0000065E  G$Port_Init$0$0                    kpdlcdtestPCA
+C:   0000065E  _Port_Init                         kpdlcdtestPCA
+C:   00000661  A$kpdlcdtestPCA$2452               kpdlcdtestPCA
+C:   00000661  C$kpdlcdtestPCA.c$101$1$125        kpdlcdtestPCA
+C:   00000661  XG$Port_Init$0$0                   kpdlcdtestPCA
+C:   00000662  A$kpdlcdtestPCA$2465               kpdlcdtestPCA
+C:   00000662  C$kpdlcdtestPCA.c$103$1$125        kpdlcdtestPCA
+C:   00000662  C$kpdlcdtestPCA.c$105$1$127        kpdlcdtestPCA
+C:   00000662  G$Interrupt_Init$0$0               kpdlcdtestPCA
+C:   00000662  _Interrupt_Init                    kpdlcdtestPCA
+C:   00000665  A$kpdlcdtestPCA$2468               kpdlcdtestPCA
+C:   00000665  C$kpdlcdtestPCA.c$106$1$127        kpdlcdtestPCA
+C:   00000668  A$kpdlcdtestPCA$2471               kpdlcdtestPCA
+C:   00000668  C$kpdlcdtestPCA.c$107$1$127        kpdlcdtestPCA
+C:   0000066A  A$kpdlcdtestPCA$2474               kpdlcdtestPCA
+C:   0000066A  C$kpdlcdtestPCA.c$108$1$127        kpdlcdtestPCA
+C:   0000066A  XG$Interrupt_Init$0$0              kpdlcdtestPCA
+C:   0000066B  A$kpdlcdtestPCA$2487               kpdlcdtestPCA
+C:   0000066B  C$kpdlcdtestPCA.c$110$1$127        kpdlcdtestPCA
+C:   0000066B  C$kpdlcdtestPCA.c$112$1$129        kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 47.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000066B  G$PCA_Init$0$0                     kpdlcdtestPCA
+C:   0000066B  _PCA_Init                          kpdlcdtestPCA
+C:   0000066E  A$kpdlcdtestPCA$2490               kpdlcdtestPCA
+C:   0000066E  C$kpdlcdtestPCA.c$114$1$129        kpdlcdtestPCA
+C:   00000671  A$kpdlcdtestPCA$2493               kpdlcdtestPCA
+C:   00000671  C$kpdlcdtestPCA.c$115$1$129        kpdlcdtestPCA
+C:   00000671  XG$PCA_Init$0$0                    kpdlcdtestPCA
+C:   00000672  A$kpdlcdtestPCA$2506               kpdlcdtestPCA
+C:   00000672  C$kpdlcdtestPCA.c$117$1$129        kpdlcdtestPCA
+C:   00000672  C$kpdlcdtestPCA.c$119$1$131        kpdlcdtestPCA
+C:   00000672  G$SMB0_Init$0$0                    kpdlcdtestPCA
+C:   00000672  _SMB0_Init                         kpdlcdtestPCA
+C:   00000675  A$kpdlcdtestPCA$2509               kpdlcdtestPCA
+C:   00000675  C$kpdlcdtestPCA.c$120$1$131        kpdlcdtestPCA
+C:   00000677  A$kpdlcdtestPCA$2512               kpdlcdtestPCA
+C:   00000677  C$kpdlcdtestPCA.c$121$1$131        kpdlcdtestPCA
+C:   00000677  XG$SMB0_Init$0$0                   kpdlcdtestPCA
+C:   00000678  A$kpdlcdtestPCA$2523               kpdlcdtestPCA
+C:   00000678  C$kpdlcdtestPCA.c$123$1$131        kpdlcdtestPCA
+C:   00000678  G$PCA_ISR$0$0                      kpdlcdtestPCA
+C:   00000678  _PCA_ISR                           kpdlcdtestPCA
+C:   0000067A  A$kpdlcdtestPCA$2524               kpdlcdtestPCA
+C:   0000067C  A$kpdlcdtestPCA$2529               kpdlcdtestPCA
+C:   0000067C  C$kpdlcdtestPCA.c$125$1$133        kpdlcdtestPCA
+C:   0000067C  C$kpdlcdtestPCA.c$127$2$134        kpdlcdtestPCA
+C:   0000067F  A$kpdlcdtestPCA$2530               kpdlcdtestPCA
+C:   00000681  A$kpdlcdtestPCA$2534               kpdlcdtestPCA
+C:   00000681  C$kpdlcdtestPCA.c$128$2$134        kpdlcdtestPCA
+C:   00000683  A$kpdlcdtestPCA$2535               kpdlcdtestPCA
+C:   00000684  A$kpdlcdtestPCA$2536               kpdlcdtestPCA
+C:   00000687  A$kpdlcdtestPCA$2537               kpdlcdtestPCA
+C:   00000689  A$kpdlcdtestPCA$2541               kpdlcdtestPCA
+C:   00000689  C$kpdlcdtestPCA.c$129$2$134        kpdlcdtestPCA
+C:   0000068B  A$kpdlcdtestPCA$2542               kpdlcdtestPCA
+C:   0000068C  A$kpdlcdtestPCA$2543               kpdlcdtestPCA
+C:   0000068F  A$kpdlcdtestPCA$2544               kpdlcdtestPCA
+C:   00000691  A$kpdlcdtestPCA$2548               kpdlcdtestPCA
+C:   00000691  C$kpdlcdtestPCA.c$130$2$134        kpdlcdtestPCA
+C:   00000694  A$kpdlcdtestPCA$2551               kpdlcdtestPCA
+C:   00000694  C$kpdlcdtestPCA.c$131$2$134        kpdlcdtestPCA
+C:   00000697  A$kpdlcdtestPCA$2554               kpdlcdtestPCA
+C:   00000697  C$kpdlcdtestPCA.c$132$2$134        kpdlcdtestPCA
+C:   00000698  A$kpdlcdtestPCA$2555               kpdlcdtestPCA
+C:   0000069A  A$kpdlcdtestPCA$2556               kpdlcdtestPCA
+C:   0000069C  A$kpdlcdtestPCA$2557               kpdlcdtestPCA
+C:   0000069D  A$kpdlcdtestPCA$2558               kpdlcdtestPCA
+C:   0000069F  A$kpdlcdtestPCA$2559               kpdlcdtestPCA
+C:   000006A1  A$kpdlcdtestPCA$2562               kpdlcdtestPCA
+C:   000006A1  C$kpdlcdtestPCA.c$134$3$135        kpdlcdtestPCA
+C:   000006A2  A$kpdlcdtestPCA$2563               kpdlcdtestPCA
+C:   000006A4  A$kpdlcdtestPCA$2564               kpdlcdtestPCA
+ASxxxx Linker V03.00 + NoICE + sdld,  page 48.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000006A6  A$kpdlcdtestPCA$2567               kpdlcdtestPCA
+C:   000006A6  C$kpdlcdtestPCA.c$135$3$135        kpdlcdtestPCA
+C:   000006A8  A$kpdlcdtestPCA$2569               kpdlcdtestPCA
+C:   000006AB  A$kpdlcdtestPCA$2570               kpdlcdtestPCA
+C:   000006AD  A$kpdlcdtestPCA$2571               kpdlcdtestPCA
+C:   000006AF  A$kpdlcdtestPCA$2575               kpdlcdtestPCA
+C:   000006AF  C$kpdlcdtestPCA.c$138$1$133        kpdlcdtestPCA
+C:   000006B2  A$kpdlcdtestPCA$2577               kpdlcdtestPCA
+C:   000006B4  A$kpdlcdtestPCA$2578               kpdlcdtestPCA
+C:   000006B6  A$kpdlcdtestPCA$2581               kpdlcdtestPCA
+C:   000006B6  C$kpdlcdtestPCA.c$139$1$133        kpdlcdtestPCA
+C:   000006B6  XG$PCA_ISR$0$0                     kpdlcdtestPCA
+C:   000006B7  A$kpdlcdtestPCA$2598               kpdlcdtestPCA
+C:   000006B7  C$kpdlcdtestPCA.c$141$1$133        kpdlcdtestPCA
+C:   000006B7  C$kpdlcdtestPCA.c$143$1$137        kpdlcdtestPCA
+C:   000006B7  G$pause$0$0                        kpdlcdtestPCA
+C:   000006B7  _pause                             kpdlcdtestPCA
+C:   000006B8  A$kpdlcdtestPCA$2599               kpdlcdtestPCA
+C:   000006BA  A$kpdlcdtestPCA$2600               kpdlcdtestPCA
+C:   000006BC  A$kpdlcdtestPCA$2604               kpdlcdtestPCA
+C:   000006BC  C$kpdlcdtestPCA.c$144$1$137        kpdlcdtestPCA
+C:   000006BD  A$kpdlcdtestPCA$2605               kpdlcdtestPCA
+C:   000006BF  A$kpdlcdtestPCA$2606               kpdlcdtestPCA
+C:   000006C1  A$kpdlcdtestPCA$2607               kpdlcdtestPCA
+C:   000006C3  A$kpdlcdtestPCA$2608               kpdlcdtestPCA
+C:   000006C5  A$kpdlcdtestPCA$2609               kpdlcdtestPCA
+C:   000006C7  A$kpdlcdtestPCA$2612               kpdlcdtestPCA
+C:   000006C7  C$kpdlcdtestPCA.c$145$1$137        kpdlcdtestPCA
+C:   000006C7  XG$pause$0$0                       kpdlcdtestPCA
+C:   000006C8  A$kpdlcdtestPCA$2625               kpdlcdtestPCA
+C:   000006C8  C$kpdlcdtestPCA.c$147$1$137        kpdlcdtestPCA
+C:   000006C8  C$kpdlcdtestPCA.c$149$1$139        kpdlcdtestPCA
+C:   000006C8  G$wait$0$0                         kpdlcdtestPCA
+C:   000006C8  _wait                              kpdlcdtestPCA
+C:   000006C9  A$kpdlcdtestPCA$2626               kpdlcdtestPCA
+C:   000006CB  A$kpdlcdtestPCA$2627               kpdlcdtestPCA
+C:   000006CD  A$kpdlcdtestPCA$2631               kpdlcdtestPCA
+C:   000006CD  C$kpdlcdtestPCA.c$150$1$139        kpdlcdtestPCA
+C:   000006CE  A$kpdlcdtestPCA$2632               kpdlcdtestPCA
+C:   000006D0  A$kpdlcdtestPCA$2633               kpdlcdtestPCA
+C:   000006D2  A$kpdlcdtestPCA$2634               kpdlcdtestPCA
+C:   000006D4  A$kpdlcdtestPCA$2635               kpdlcdtestPCA
+C:   000006D6  A$kpdlcdtestPCA$2636               kpdlcdtestPCA
+C:   000006D8  A$kpdlcdtestPCA$2639               kpdlcdtestPCA
+C:   000006D8  C$kpdlcdtestPCA.c$151$1$139        kpdlcdtestPCA
+C:   000006D8  XG$wait$0$0                        kpdlcdtestPCA
+C:   000006D9  __gptrput                          _gptrput
+C:   000006F4  __mulint                           _mulint
+C:   000006F4  __mulint_dummy                     _mulint
+C:   00000781  _vsprintf                          sprintf
+C:   000007BE  _sprintf                           sprintf
+ASxxxx Linker V03.00 + NoICE + sdld,  page 49.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AD    00000D9E =        3486. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000817  _vprintf                           vprintf
+C:   00000830  _printf                            vprintf
+C:   00000907  __print_format                     printf_large
+C:   00000E13  _strlen                            _strlen
+C:   00000E2B  __gptrget                          _gptrget
+C:   00000E47  __sdcc_external_startup            _startup
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 50.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CONST                               00000E4B    000000AC =         172. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000E4B  FkpdlcdtestPCA$__str_0$0$0         kpdlcdtestPCA
+C:   00000E61  FkpdlcdtestPCA$__str_1$0$0         kpdlcdtestPCA
+C:   00000E71  FkpdlcdtestPCA$__str_2$0$0         kpdlcdtestPCA
+C:   00000E74  FkpdlcdtestPCA$__str_3$0$0         kpdlcdtestPCA
+C:   00000E7D  FkpdlcdtestPCA$__str_4$0$0         kpdlcdtestPCA
+C:   00000EB1  FkpdlcdtestPCA$__str_5$0$0         kpdlcdtestPCA
+C:   00000ECE  FkpdlcdtestPCA$__str_6$0$0         kpdlcdtestPCA
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 51.
+
+Files Linked                              [ module(s) ]
+
+C:\SiLabs\LITEC\Lab4\Worksheet 10\kpdlcdtestPCA.rel
+                                          [  ]
+
+
+Libraries Linked                          [ object file ]
+
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtclear.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxinit.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _gptrput.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libint.lib
+                                          [ _mulint.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ sprintf.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxclear.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _bp.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ vprintf.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ printf_large.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _strlen.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtstart.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _gptrget.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _startup.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 52.
+
+User Base Address Definitions
+
+HOME = 0x0000
+XSEG = 0x0001
+PSEG = 0x0001
+ISEG = 0x0000
+BSEG = 0x0000
+
+
